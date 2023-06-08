@@ -39,7 +39,9 @@ h1,h2,h3 {
   font-weight: 700;
   color: teal;
   text-transform: uppercase;
-  text-shadow: 4px 2px 4px rgba(0, 128, 128, 0.5);
+  text-shadow: 2px 1px 3px #fff;
+  margin: 0;
+  font-family: var(--font-name);
 }
 
 a {
@@ -68,8 +70,24 @@ ul {
 }
 
 .logo__img img {
-  height: 100px;
-  width: 150px;
+  height: 40px;
+  width: 100px;
+  margin-right: 10px;
 }
 
+.nav__item {
+  color: var(--primary-color)
+}
 
+.mobile_menu {
+  color: #fff;
+}
+
+.register__btn {
+  color: var(--heading-color);
+}
+
+::selection {
+  background-color: teal;
+  color: #fff;
+}
