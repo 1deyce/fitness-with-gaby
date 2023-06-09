@@ -84,7 +84,7 @@ ul {
 }
 
 .register__btn {
-  color: var(--heading-color);
+  color: var(--heading-color)
 }
 
 ::selection {

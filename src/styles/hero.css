@@ -1,0 +1,19 @@
+
+
+.play__btn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: #fff;
+    background: white;
+    border-radius: 5px;
+    font-family: var(--font-name);
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0 4px 8px teal;
+    transition: transform 0.3s, box-shadow 0.3s;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

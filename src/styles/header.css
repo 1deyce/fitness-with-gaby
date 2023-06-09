@@ -77,13 +77,13 @@
     font-size: 1rem;
     cursor: pointer;
     font-weight: 500;
-    box-shadow: 0 4px 8px teal;
+    box-shadow: 4px 4px 2px white;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .register__btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px black;
 }
 .mobile__menu {
     color: var(--heading-color);
