@@ -77,8 +77,8 @@
     font-size: 1rem;
     cursor: pointer;
     font-weight: 500;
-    box-shadow: 4px 4px 2px white;
-    transition: transform 0.3s, box-shadow 0.3s;
+    /*box-shadow: 4px 4px 2px white;
+    transition: transform 0.3s, box-shadow 0.3s;*/
 }
 
 .register__btn:hover {

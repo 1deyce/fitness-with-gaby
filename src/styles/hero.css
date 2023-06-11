@@ -11,9 +11,11 @@
     font-size: 1rem;
     cursor: pointer;
     font-weight: 500;
-    box-shadow: 0 4px 8px teal;
-    transition: transform 0.3s, box-shadow 0.3s;
     align-items: center;
     justify-content: center;
     display: flex;
+}
+
+p {
+    color: #fff;
 }

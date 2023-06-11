@@ -39,7 +39,7 @@ h1,h2,h3 {
   font-weight: 700;
   color: teal;
   text-transform: uppercase;
-  text-shadow: 2px 1px 3px #fff;
+  text-shadow: 2px 1px 3px teal;
   margin: 0;
   font-family: var(--font-name);
 }
