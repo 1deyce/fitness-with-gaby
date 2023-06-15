@@ -57,6 +57,10 @@ ul {
   list-style: none;
 }
 
+p {
+  color: #fff;
+}
+
 /* ======= reusable class ======== */
 .container {
   width: 1140px;
