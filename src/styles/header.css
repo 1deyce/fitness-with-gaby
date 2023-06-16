@@ -5,6 +5,10 @@
     line-height: 70px;
 }
 
+.main__head {
+    cursor: pointer;
+}
+
 .nav__wrapper {
     display: flex;
     align-items: center;
@@ -77,9 +81,6 @@
     font-size: 1rem;
     cursor: pointer;
     font-weight: 500;
-    /*box-shadow: 4px 4px 2px white;
-    transition: transform 0.3s, box-shadow 0.3s;*/
-    box-shadow: 1px 1px 1px #fff;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 

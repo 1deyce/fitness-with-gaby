@@ -58,7 +58,13 @@ ul {
 }
 
 p {
+  font-family: var(--font-name);
   color: #fff;
+  padding: 8px;
+  text-align: justify;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
 /* ======= reusable class ======== */

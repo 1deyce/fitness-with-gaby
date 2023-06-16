@@ -33,7 +33,7 @@ const Header = () => {
                     <div className="logo__img">
                         <img src={logo} alt="" />
                     </div>
-                    <h2>Fitness with Gaby</h2>
+                    <h2 className='main__head'>Fitness with Gaby</h2>
                 </div>
 
                 {/* ======= nav menu ======== */}

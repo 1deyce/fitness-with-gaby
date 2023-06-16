@@ -19,3 +19,17 @@
 p {
     color: #fff;
 }
+
+h5 {
+    color: var(--headingColor);
+}
+
+.hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 150px;
+}
+
+.hero__content .section__title {
+    font-style: 3rem;
+}
