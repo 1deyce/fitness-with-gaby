@@ -21,7 +21,7 @@ p {
 }
 
 h5 {
-    color: var(--headingColor);
+    color: teal;
 }
 
 .hero__wrapper {

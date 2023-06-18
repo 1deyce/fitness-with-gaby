@@ -2,6 +2,7 @@ import React from 'react';
 import heroImg from "../../assets/img/gym-02.png";
 import dumbleIcon from "../../assets/img/dumble.png";
 import "../../styles/hero.css";
+import { RiHeartPulseLine, RiMapPinLine } from 'react-icons/ri';
 
 const Hero = () => {
     return <section>
@@ -42,26 +43,22 @@ const Hero = () => {
                         </div>
                     </div>
 
-                <div className="heart__rate">
-                    <h5>Heart Rate</h5>
-                    <span><i class="ri-heart-pulse-line"></i></span>
-                    <h5>2567 BPM</h5>
-                </div>
-
-                <div className="gym__location">
-
-                    <span><i class="ri-map-pin-line"></i></span>
-                    <h5>Find a new gym near you</h5>
-                </div>    
-
-                <div className="dumbell__icon">
-                    <img src={dumbleIcon} alt="" />
-                </div>
-
+                    <div className="heart__rate">
+                        <h5>Heart Rate</h5>
+                        <span style={{color: 'white'}}><RiHeartPulseLine size={30} /></span>
+                        <h5>2567 BPM</h5>
+                    </div>
+                    <div className="gym__location">
+                        <span style={{color: 'white'}}><RiMapPinLine size={30} /></span>
+                        <h5>Find a new gym near you</h5>
+                    </div>    
+                    <div className="dumbell__icon">
+                        <img src={dumbleIcon} alt="" />
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 }
 
-export default Hero;  
+export default Hero;

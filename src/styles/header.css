@@ -80,7 +80,7 @@
     font-family: var(--font-name);
     font-size: 1rem;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 600;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -94,7 +94,6 @@
     cursor: pointer;
     display: none;
 }
-
 
 .sticky__header {
     width: 100%;
