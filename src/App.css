@@ -3,7 +3,7 @@
 
 :root {
   --primary-color: #fff;
-  --heading-color: teal;
+  --heading-color: #3cbac4;
   --bg-gradient: linear-gradient(
     90deg,
     rgba(103, 101, 240, 1) 27%,
@@ -24,7 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0);
 }
 
 body {
@@ -35,11 +35,10 @@ section {
   padding: 50px 0px;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4,h5 {
   font-weight: 700;
-  color: teal;
-  text-transform: uppercase;
-  text-shadow: 2px 1px 3px teal;
+  color: var(--primary-color);
+  text-transform: none;
   margin: 0;
   font-family: var(--font-name);
 }
@@ -60,10 +59,9 @@ ul {
 p {
   font-family: var(--font-name);
   color: #fff;
-  padding: 8px;
   text-align: justify;
-  line-height: 1.2;
-  margin-bottom: 20px;
+  line-height: 1;
+  margin-bottom: 10px;
   letter-spacing: 0.5px;
 }
 
@@ -75,7 +73,7 @@ p {
 }
 
 .section__title {
-  color: var(--heading-color);
+  color: var(--primary-color);
   font-weight: 700;
 }
 
@@ -98,6 +96,6 @@ p {
 }
 
 ::selection {
-  background-color: teal;
+  background-color: var(--heading-color);
   color: #fff;
 }

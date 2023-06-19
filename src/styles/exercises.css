@@ -1,0 +1,13 @@
+.exercise__top p {
+    font-size: 1.1rem;
+    color: var(--heading-color);
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.exercise__top .section__title {
+    font-style: 3rem;
+    padding-right: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}

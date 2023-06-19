@@ -8,14 +8,15 @@ const Hero = () => {
     return <section>
         <div className="container">
             <div className="hero__wrapper">
-            {/* ========== hero content ========== */}
+                {/* ========== hero content ========== */}
                 <div className="hero__content">
-                    <h2>
-                        Exercise is the key to a 
+                    <h2 className="section__title">
+                        Exercise is the key to a
                         <span className="highlights"> Healthy</span> Lifestyle
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quas ducimus odit sit vitae provident architecto, expedita vel autem eos dolorem quasi incidunt id numquam, omnis maxime commodi repudiandae blanditiis.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
+                        labore in nulla officia eligendi neque a ipsam consequuntur ex architecto itaque vel voluptates ratione?
                     </p>
 
                     <div className="hero__btns">
@@ -28,32 +29,35 @@ const Hero = () => {
                         </button>*/}
                     </div>
                 </div>
-            </div>
 
-            {/* ========== hero img ========== */}
-            <div className="hero__img">
-                <div className="hero__img-wrapper">
-                    <div className="box-01">
-                        <div className="box-02">
-                            <div className="box-03">
-                                <div className="box__img">
-                                    <img src={heroImg} alt="" />
+
+                {/* ========== hero img ========== */}
+                <div className="hero__img">
+                    <div className="hero__img-wrapper">
+                        <div className="box-01">
+                            <div className="box-02">
+                                <div className="box-03">
+                                    <div className="box__img">
+                                        <img src={heroImg} alt="" />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="heart__rate">
-                        <h5>Heart Rate</h5>
-                        <span style={{color: 'white'}}><RiHeartPulseLine size={30} /></span>
-                        <h5>2567 BPM</h5>
-                    </div>
-                    <div className="gym__location">
-                        <span style={{color: 'white'}}><RiMapPinLine size={30} /></span>
-                        <h5>Find a new gym near you</h5>
-                    </div>    
-                    <div className="dumbell__icon">
-                        <img src={dumbleIcon} alt="" />
+                        <div className="heart__rate">
+                            <h5>Heart Rate</h5>
+                            <span style={{color: 'var(--heading-color)'}}><RiHeartPulseLine size={30} /></span>
+                            <h6>2567 BPM</h6>
+                        </div>
+                        <div className="gym__location">
+                            <span style={{color: 'var(--heading-color)'}}><RiMapPinLine size={30} /></span>
+                            <h5>Find a new <br />
+                                gym near you
+                            </h5>
+                        </div>    
+                        <div className="dumbell__icon">
+                            <img src={dumbleIcon} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
