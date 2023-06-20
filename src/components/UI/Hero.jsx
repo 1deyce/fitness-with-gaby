@@ -16,7 +16,8 @@ const Hero = () => {
                     </h2>
                     <p>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-                        labore in nulla officia eligendi neque a ipsam consequuntur ex architecto itaque vel voluptates ratione?
+                        labore in nulla officia eligendi neque a ipsam consequuntur <br />
+                         ex architecto itaque vel voluptates ratione?
                     </p>
 
                     <div className="hero__btns">

@@ -7,7 +7,7 @@
 
 .main__head {
     cursor: pointer;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-shadow: 1px 1px 1px var(--heading-color);
 }
 

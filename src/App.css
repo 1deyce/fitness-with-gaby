@@ -4,20 +4,17 @@
 :root {
   --primary-color: #fff;
   --heading-color: #3cbac4;
-  --bg-gradient: linear-gradient(
-    90deg,
-    rgba(103, 101, 240, 1) 27%,
-    rgba(141, 141, 235, 1) 85%
-  );
+  --bg-gradient: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
   --font-name: "Archivo Black", sans-serif;
 
   /* 
-        #9785f2
-        #b5a9f3
-        #d3cef2
-        #d7337a
-    */
+    #9785f2
+    #b5a9f3
+    #d3cef2
+    #d7337a
+  */
 }
+
 
 /* ======= reset default browser styles ======== */
 * {
@@ -67,7 +64,7 @@ p {
 
 /* ======= reusable class ======== */
 .container {
-  width: 1140px;
+  width: 1280px;
   padding: 0px 15px;
   margin: auto;
 }
