@@ -4,8 +4,8 @@
 
 :root {
   --primary-color: #fff;
-  --heading-color: #3cbac4;
-  --bg-gradient: linear-gradient(300.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
+  --heading-color: #3cc4bd;
+  --bg-gradient: linear-gradient(300.9deg, rgb(49, 199, 171) 27.8%, rgb(32, 170, 183) 67%);
   --font-name: "Lato", sans-serif;
 
   /* 
