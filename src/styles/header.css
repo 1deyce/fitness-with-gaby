@@ -77,7 +77,7 @@
     border: none;
     outline: none;
     padding: 10px 20px;
-    color: #fff;
+    color: black;
     background: var(--bg-gradient);
     border-radius: 5px;
     font-family: var(--font-name);
