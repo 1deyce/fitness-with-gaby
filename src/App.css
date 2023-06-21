@@ -1,11 +1,12 @@
 /* google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Urbanist:wght@200;300;400;500;600;700;800&display=swap');
 
 :root {
   --primary-color: #fff;
   --heading-color: #3cbac4;
-  --bg-gradient: linear-gradient(91.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
-  --font-name: "Archivo Black", sans-serif;
+  --bg-gradient: linear-gradient(300.9deg, rgb(93, 248, 219) 27.8%, rgb(33, 228, 246) 67%);
+  --font-name: "Lato", sans-serif;
 
   /* 
     #9785f2
@@ -89,7 +90,7 @@ p {
 }
 
 .register__btn {
-  color: var(--heading-color)
+  color: black;
 }
 
 ::selection {

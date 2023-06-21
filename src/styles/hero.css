@@ -31,7 +31,7 @@ p {
 }
 
 .hero__content .section__title {
-    font-style: 3rem;
+    font-size: 3rem;
     padding-right: 60px;
     line-height: 60px;
     margin-bottom: 20px;
@@ -184,7 +184,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--heading-color);   
+    background: var(--bg-gradient);   
     width: 40px;
     height: 40px;
     border-radius: 5px;
@@ -193,7 +193,7 @@ p {
 
 .dumbell__icon img {
     width: 100%;
-    background: var(--heading-color);
+    background: var(--bg-gradient);
 }
 
 

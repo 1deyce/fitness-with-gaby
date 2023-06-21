@@ -11,7 +11,7 @@ const Hero = () => {
                 {/* ========== hero content ========== */}
                 <div className="hero__content">
                     <h2 className="section__title">
-                        Exercise is the key to a
+                        Exercise is the key to a <br />
                         <span className="highlights"> Healthy</span> Lifestyle
                     </h2>
                     <p>
