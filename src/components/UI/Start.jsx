@@ -12,7 +12,7 @@ const Start = () => {
 
                 <div className="start__content">
                     <h2 className="section__title">
-                        Ready to make a change?
+                        Ready to make a <span className="highlights">change</span> ? 
                     </h2>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus neque tenetur commodi <br />
