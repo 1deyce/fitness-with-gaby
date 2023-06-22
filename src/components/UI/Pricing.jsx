@@ -38,8 +38,8 @@ const Pricing = () => {
 
                 <div className="pricing__item pricing__item-02">
                     <div className="pricing__card-top">
-                        <h2 className="section__title">Standard Member</h2>
-                        <h2 className="pricing section__title">R1000 <span className="highlights">/ pm</span></h2>
+                        <h2 className="section__title">Premium Member</h2>
+                        <h2 className="pricing section__title">R1500 <span className="highlights">/ pm</span></h2>
                     </div>
 
                     <div className="services">
@@ -59,8 +59,8 @@ const Pricing = () => {
 
                 <div className="pricing__item">
                     <div className="pricing__card-top">
-                        <h2 className="section__title">Premium Member</h2>
-                        <h2 className="pricing section__title">R1500 <span className="highlights">/ pm</span></h2>
+                        <h2 className="section__title">Standard Member</h2>
+                        <h2 className="pricing section__title">R1000 <span className="highlights">/ pm</span></h2>
                     </div>
 
                     <div className="services">
