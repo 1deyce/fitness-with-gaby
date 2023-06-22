@@ -3,24 +3,20 @@ import "../../styles/header.css";
 import logo from "../../assets/img/logo1.jpg";
 
 
-const nav__links =[
+const nav__links = [
     {
         path:'#',
         display:'Home'
     },
     {
         path:'#',
-        display:'About'
+        display:'Bookings'
     },
     {
         path:'#',
-        display:'Classes'
+        display:'Reviews'
     },
-    {
-        path:'#',
-        display:'Pricing'
-    },
-]
+];
 
 const Header = () => {
     return (
