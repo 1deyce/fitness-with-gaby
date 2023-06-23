@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import "../../styles/testimonials.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -16,7 +16,9 @@ export default function Testimonials() {
     return (
         <>
             <section>
-                <div className="container">
+                <div className="container sliders">
+
+                    <h2 className="section__title">Testimonials</h2>
                     <Swiper
                         effect={"cards"}
                         grabCursor={true}
@@ -24,8 +26,8 @@ export default function Testimonials() {
                         className="mySwiper"
                     >
                         <SwiperSlide>
-                            <div className="container">
-                                <div className="slide__img">
+                            <div className="slide__item">
+                                <div className="slide__img-01">
                                     <img src={avatar01} alt="" />
                                 </div>
 
@@ -36,8 +38,8 @@ export default function Testimonials() {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className="container">
-                                <div className="slide__img">
+                            <div className="slide__item">
+                                <div className="slide__img-02">
                                     <img src={avatar02} alt="" />
                                 </div>
 
@@ -48,8 +50,8 @@ export default function Testimonials() {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className="container">
-                                <div className="slide__img">
+                            <div className="slide__item">
+                                <div className="slide__img-03">
                                     <img src={avatar01} alt="" />
                                 </div>
 
