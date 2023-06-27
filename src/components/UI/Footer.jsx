@@ -4,6 +4,8 @@ import logo from "../../assets/img/logo1.jpg"
 
 
 const Footer = () => {
+    const year = new Date().getFullYear()  
+
     return <section>
         <div className="footer-container">
             <footer className="footer">
@@ -35,6 +37,10 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
+
+                    <p className="copyright">
+                        Copyright - {year} developed by Keenan. All rights reserved.
+                    </p>
                 </div>
             </footer>
         </div>
