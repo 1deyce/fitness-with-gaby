@@ -13,13 +13,13 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer__wrapper">
                         <div className="footer__box">
-                        <div className="logo">
-                        <div className="logo__img">
-                            <img src={logo} alt="" />
-                        </div>
-                        <h2>Fitness with Gaby</h2>
-                        </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore nisi accusamus distinctio eaque, quis minus.</p>
+                            <div className="logo">
+                                <div className="logo__img">
+                                    <img src={logo} alt="" />
+                                </div>
+                                <h2>Fitness with Gaby</h2>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore nisi accusamus distinctio eaque, quis minus.</p>
                         </div>
 
                         <div className="footer__box">
