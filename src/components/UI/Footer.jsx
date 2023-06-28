@@ -1,6 +1,7 @@
 import React from 'react';
 import "../../styles/footer.css";
 import logo from "../../assets/img/logo1.jpg"
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -26,13 +27,13 @@ const Footer = () => {
 
                             <ul className="footer__links">
                                 <li>
-                                    <a href="#">Home</a>
+                                    <Link to="/">Home</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Bookings</a>
+                                    <Link to="/bookings">Bookings</Link>
                                 </li>
                                 <li>
-                                    <a href="#">Reviews</a>
+                                    <Link to="/reviews">Reviews</Link>
                                 </li>
                             </ul>
                         </div>

@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 2.7rem;
 }
 
 .logo {
@@ -53,7 +54,7 @@
     column-gap: 2.7rem;
 }
 
-.nav__item a {
+.navigation a {
     color: var(--primary-color);
     font-family: var(--font-name);
     font-weight: 600;
@@ -62,7 +63,7 @@
     font-size: 1rem;
 }
 
-.nav__item a:hover {
+.navigation a:hover {
     color: var(--heading-color);
 }
 
@@ -99,11 +100,11 @@
     display: none;
 }
 
-.sticky__header {
+/* .sticky__header {
     width: 100%;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 99;
     background: #fff;
-}
+} */

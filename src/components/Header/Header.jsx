@@ -1,60 +1,53 @@
 import React from 'react';
 import "../../styles/header.css";
 import logo from "../../assets/img/logo1.jpg";
+import { Link } from 'react-router-dom';
 
-
-const nav__links = [
-    {
-        path:'#',
-        display:'Home'
-    },
-    {
-        path:'#',
-        display:'Bookings'
-    },
-    {
-        path:'#',
-        display:'Reviews'
-    },
-];
+const Navbar = () => {
+    return (
+        <nav>
+            <ul className='menu'>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/bookings">Bookings</Link>
+                </li>
+                <li>
+                    <Link to="/reviews">Reviews</Link>
+                </li>
+            </ul>
+        </nav>
+    );
+};
 
 const Header = () => {
     return (
-    <header className=''>
-        <div className='container'>
-            <div className='nav__wrapper'>
-
-                {/* ======= LOGO ======== */}
-                <div className='logo'>
-                    <div className="logo__img">
-                        <img src={logo} alt="" />
+        <header className=''>
+            <div className="container">
+                <div className="nav__wrapper">
+                    {/* Your logo and main heading */}
+                    <div className="logo">
+                        <div className="logo__img">
+                            <img src={logo} alt="" />
+                        </div>
+                        <h2 className="main__head">Fitness with Gaby</h2>
                     </div>
-                    <h2 className='main__head'>Fitness with Gaby</h2>
-                </div>
-
-                {/* ======= nav menu ======== */}
-
+                    {/* Navigation links */}
                     <div className="navigation">
-                        <ul className="menu">
-                            {
-                                nav__links.map(item=>(
-                                    <li className="nav__item"><a href={item.path}>{item.display}</a></li>
-                                ))
-                            }
-                        </ul>
+                        <Navbar />
                     </div>
-
-                    {/* ======= nav right ======== */}
+                    {/* Additional items on the right */}
                     <div className="nav__right">
                         <button className="register__btn">Register</button>
                         <span className="mobile_menu">
-                            <i class="ri-menu-line"></i>
+                            <i className="ri-menu-line"></i>
                         </span>
                     </div>
+                </div>
             </div>
-        </div>
-    </header>
-    )
+        </header>
+    );
 };
 
 export default Header;

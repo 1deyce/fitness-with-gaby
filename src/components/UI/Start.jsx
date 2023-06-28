@@ -19,7 +19,6 @@ const Start = () => {
                         voluptas atque voluptatem, beatae ducimus autem eveniet repudiandae expedita quae officia <br />
                         nobis illum pariatur ipsum, inventore, nemo exercitationem.
                     </p>
-
                     <button className="register__btn">
                         Get Started
                     </button>

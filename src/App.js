@@ -1,26 +1,29 @@
 import "./App.css";
 import "./styles/hero.css";
-import "./styles/header.css"
+import "./styles/header.css";
+import "./styles/exercises.css";
+import "./styles/footer.css";
+import "./styles/pricing.css";
+import "./styles/start.css";
 import Header from "./components/Header/Header";
-import Hero from "./components/UI/Hero";
-import Exercises from "./components/UI/Exercises";
-import Start from "./components/UI/Start";
-import Pricing from "./components/UI/Pricing";
-import Testimonials from "./components/UI/Testimonials";
+import Home from "./pages/HomePage";
+import Bookings from "./pages/BookingsPage";
+import Reviews from "./pages/ReviewsPage";
+import { Route, Router, Routes } from "react-router-dom";
 import Footer from "./components/UI/Footer";
 
-function App() {
+const App = () => {
   return ( 
-    <>
-    <Header />
-    <Hero />
-    <Exercises />
-    <Start />
-    <Pricing />
-    <Testimonials />
-    <Footer />
-    </>
+      <Router>
+        <Header />
+          <Routes>
+            <Route exact path="/" element={<Home />} /> 
+            <Route exact path="/bookings" element={<Bookings />} /> 
+            <Route exact path="/reviews" element={<Reviews />} />
+          </Routes>
+        <Footer />
+      </Router>
   );
-}
+};
 
 export default App;
