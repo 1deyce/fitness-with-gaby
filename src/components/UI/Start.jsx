@@ -1,6 +1,8 @@
-import React from 'react'
+import React from 'react';
 import "../../styles/start.css";
-import trainerImg from "../../assets/img/trainer.png"
+import trainerImg from "../../assets/img/trainer.png";
+import { Link } from 'react-router-dom';
+
 
 const Start = () => {
     return <section>
@@ -19,9 +21,10 @@ const Start = () => {
                         voluptas atque voluptatem, beatae ducimus autem eveniet repudiandae expedita quae officia <br />
                         nobis illum pariatur ipsum, inventore, nemo exercitationem.
                     </p>
-                    <button className="register__btn">
-                        Get Started
-                    </button>
+
+                    <Link to="/bookings">
+                        <button className="register__btn">Get Started</button>
+                    </Link>
                 </div>
             </div>
         </div>

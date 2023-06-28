@@ -39,7 +39,9 @@ const Header = () => {
                     </div>
                     {/* Additional items on the right */}
                     <div className="nav__right">
-                        <button className="register__btn">Register</button>
+                        <Link to="/">
+                            <button className="register__btn">Contact Me</button>
+                        </Link>                        
                         <span className="mobile_menu">
                             <i className="ri-menu-line"></i>
                         </span>

@@ -3,6 +3,7 @@ import heroImg from "../../assets/img/gym-02.png";
 import dumbleIcon from "../../assets/img/dumble.png";
 import "../../styles/hero.css";
 import { RiHeartPulseLine, RiMapPinLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return <section>
@@ -21,7 +22,9 @@ const Hero = () => {
                     </p>
 
                     <div className="hero__btns">
-                        <button className="register__btn">Get Started</button>
+                        <Link to="/bookings">
+                            <button className="register__btn">Get Started</button>
+                        </Link>
                         {/*<button className="watch__btn">
                             <span className="play__btn">
                                 <i class="ri-play-line"></i>
