@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
 
                     <p className="copyright">
-                        Copyright - {year} developed by Keenan. All rights reserved.
+                        © {year} developed by Keenan. All rights reserved.
                     </p>
                 </div>
             </footer>

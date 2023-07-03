@@ -51,3 +51,7 @@
     text-align: center;
     color: var(--heading-color);
 }
+
+.section__title h2 {
+    color: #fff;
+}

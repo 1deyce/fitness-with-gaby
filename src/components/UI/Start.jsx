@@ -29,7 +29,6 @@ const Start = () => {
             </div>
         </div>
     </section>
-  
 }
 
 export default Start;

@@ -2,11 +2,9 @@ import React from "react";
 import "../../styles/testimonials.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-
 // import required modules
 import { EffectCards } from "swiper";
 import avatar01 from "../../assets/img/avatar01.png";
@@ -17,8 +15,13 @@ export default function Testimonials() {
         <>
             <section>
                 <div className="container sliders">
+                    <h2 
+                        style={{ color: 'white' }} 
+                        className="section__title"
+                    >
+                        Reviews
+                    </h2>
 
-                    <h2 className="section__title">Testimonials</h2>
                     <Swiper
                         effect={"cards"}
                         grabCursor={true}
