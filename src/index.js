@@ -14,6 +14,8 @@ import "./styles/exercises.css";
 import "./styles/footer.css";
 import "./styles/pricing.css";
 import "./styles/start.css";
+// import './assets/main.css';
+import ContactPage from "./pages/ContactPage";
 
 export default function App() {
   return (
@@ -22,7 +24,8 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="bookings" element={<BookingsPage />} />
-          <Route path="reviews" element={<ReviewsPage/>} />
+          <Route path="reviews" element={<ReviewsPage />} />
+          <Route path="contact" element={<ContactPage />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

@@ -16,6 +16,9 @@ const Navbar = () => {
                 <li>
                     <Link to="/reviews">Reviews</Link>
                 </li>
+                <li>
+                    <Link to="/contact">Contact Us</Link>
+                </li>
             </ul>
         </nav>
     );
@@ -29,7 +32,9 @@ const Header = () => {
                     {/* Your logo and main heading */}
                     <div className="logo">
                         <div className="logo__img">
-                            <img src={logo} alt="" />
+                            <Link to="/">
+                                <img src={logo} alt="" />
+                            </Link>
                         </div>
                         <h2 className="main__head">Fitness with Gaby</h2>
                     </div>
@@ -39,9 +44,9 @@ const Header = () => {
                     </div>
                     {/* Additional items on the right */}
                     <div className="nav__right">
-                        <Link to="/">
+                        {/* <Link to="/">
                             <button className="register__btn">Contact Me</button>
-                        </Link>                        
+                        </Link>                         */}
                         <span className="mobile_menu">
                             <i className="ri-menu-line"></i>
                         </span>

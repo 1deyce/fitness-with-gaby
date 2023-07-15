@@ -32,7 +32,8 @@ p {
 
 .hero__content .section__title {
     font-size: 3rem;
-    padding-right: 60px;
+    text-align: center;
+    justify-items: center;
     line-height: 60px;
     margin-bottom: 20px;
 }
@@ -49,9 +50,19 @@ p {
 }
 
 .hero__btns {
-    display: flex;
+    justify-content: center;
+    text-align: center;
     align-items: center;
     column-gap: 3rem;
+}
+
+.register__btn:hover {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    column-gap: 3rem;
+    color: var(--primary-color);
+    /* background-color: #fff; */
 }
 
 
@@ -194,6 +205,14 @@ p {
 .dumbell__icon img {
     width: 100%;
     background: var(--bg-gradient);
+}
+
+.herop {
+    color: #fff;
+}
+
+.sectionp {
+    text-align: center;
 }
 
 

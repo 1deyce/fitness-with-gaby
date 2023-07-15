@@ -1,8 +1,8 @@
 import React from 'react';
-import heroImg from "../../assets/img/gym-02.png";
-import dumbleIcon from "../../assets/img/dumble.png";
+// import heroImg from "../../assets/img/gym-02.png";
+// import dumbleIcon from "../../assets/img/dumble.png";
 import "../../styles/hero.css";
-import { RiHeartPulseLine, RiMapPinLine } from 'react-icons/ri';
+// import { RiHeartPulseLine, RiMapPinLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
@@ -12,13 +12,22 @@ const Hero = () => {
                 {/* ========== hero content ========== */}
                 <div className="hero__content">
                     <h2 className="section__title">
-                        Exercise is the key to a <br />
-                        <span className="highlights"> Healthy</span> Lifestyle
+                        About Us
                     </h2>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-                        labore in nulla officia eligendi neque a ipsam consequuntur <br />
-                         ex architecto itaque vel voluptates ratione?
+                    <p className='sectionp'>
+                        <span className='herop'>Fitness with Gaby</span> is the go-to destination for anyone looking
+                        to achieve their fitness goals in Cape Town. At <span className='herop'>Fitness with Gaby</span>,
+                        we are dedicated to supporting our clients every step of 
+                        the way, regardless of their current level of fitness or experience.
+                        <br /><br />
+                        Beyond bootcamp and personal training, we offer a range of massage
+                        services to ensure our clients are feeling & performing at their best.
+                        Our <span className='herop'>Full Body</span> Sport Massage & 
+                        <span className='herop'> Targeted Muscle Group</span> Sport Massage are
+                        the perfect complement to any fitness routine, helping to prevent injury,
+                        relieve muscle tension, and improve overall recovery time.
+                        With us, you'll be one step closer to reaching your fitness & wellness goals.<br /><br />
+                        Book with us today & experience the difference!
                     </p>
 
                     <div className="hero__btns">
@@ -36,7 +45,7 @@ const Hero = () => {
 
 
                 {/* ========== hero img ========== */}
-                <div className="hero__img">
+                {/* <div className="hero__img">
                     <div className="hero__img-wrapper">
                         <div className="box-01">
                             <div className="box-02">
@@ -63,7 +72,7 @@ const Hero = () => {
                             <img src={dumbleIcon} alt="" />
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </section>

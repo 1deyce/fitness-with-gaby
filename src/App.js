@@ -11,6 +11,8 @@ import Bookings from "./pages/BookingsPage";
 import Reviews from "./pages/ReviewsPage";
 import { Route, Router, Routes } from "react-router-dom";
 import Footer from "./components/UI/Footer";
+import ContactPage from "./pages/ContactPage";
+// import './assets/main.css';
 
 const App = () => {
   return ( 
@@ -20,6 +22,7 @@ const App = () => {
             <Route exact path="/" element={<Home />} /> 
             <Route exact path="/bookings" element={<Bookings />} /> 
             <Route exact path="/reviews" element={<Reviews />} />
+            <Route exact path="/contact" element={<ContactPage />} />
           </Routes>
         <Footer />
       </Router>

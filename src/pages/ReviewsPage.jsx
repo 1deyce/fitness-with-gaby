@@ -1,6 +1,7 @@
 import React from 'react'
 import Testimonials from "../components/UI/Testimonials";
 import { useEffect } from 'react';
+import "../../src/assets/tailwind.css";
 
 const usePageTitle = (title) => {
   useEffect(() => {
@@ -13,7 +14,7 @@ const ReviewsPage = () => {
 
   return (
     <div>
-        <Testimonials />
+      <Testimonials />
     </div>
   );
 };

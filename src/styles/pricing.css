@@ -2,12 +2,11 @@
 
 .pricing__top {
     text-align: center;
-
 }
 
 .pricing__top h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .pricing__top p {
@@ -69,7 +68,7 @@
     margin-top: 5px;
 }
 
-.pricing__item .services ul li span {
+.pricing__item .services ul li i span {
     font-size: 0.7rem;
 }
 
@@ -99,4 +98,12 @@
 
 .pricing__item-02 .services ul li span i {
     color: var(--primary-color);
+}
+
+.pricing__top .highlights {
+    color: var(--heading-color);
+}
+
+.high__v2 {
+    color: #fff;
 }
