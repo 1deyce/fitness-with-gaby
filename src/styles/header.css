@@ -93,12 +93,6 @@
     transform: translateY(-2px);
     box-shadow: 0 6px 12px black;
 }
-.mobile__menu {
-    color: var(--heading-color);
-    font-size: 1.3rem;
-    cursor: pointer;
-    display: none;
-}
 
 /* .sticky__header {
     width: 100%;
