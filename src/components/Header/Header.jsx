@@ -2,46 +2,25 @@ import React, { useState, useRef } from 'react';
 import "../../styles/header.css";
 import "../../assets/tailwind.css";
 import logo from "../../assets/img/logo1.jpg";
-import { Link } from 'react-router-dom';
-import 
+import { Link, useHistory } from 'react-router-dom';
+import { useMediaQuery } from 'react-responsive';
 
-const Navbar = () => {
-    const menuRef = useRef(null);
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = ()=> {
-        setIsOpen(!isOpen);
-        if(menuRef.current !== null) {
-            menuRef.current.classList.toggle('show__menu');
-        }
-    };
-
-    const handleClick = e=>{
-        e.preventDefault()
-
-        const targetAttr = e.target.getAttribute('href')
-        const location = document.querySelector(targetAttr).offsetTop
-
-        window.scrollTo({
-            top: location - 80,
-            left: 0,
-        });
-    };
+const Navbar = ({ isOpen }) => {
 
     return (
-        <nav className='' useRef={menuRef} onClick={toggleMenu}>
-            <ul className='menu'>
+        <nav>
+            <ul className={`menu ${isOpen ? 'show__menu' : ''}`} >
                 <li>
-                    <Link onClick={handleClick} to="/">Home</Link>
+                    <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link onClick={handleClick} to="/bookings">Bookings</Link>
+                    <Link to="/bookings">Bookings</Link>
                 </li>
                 <li>
-                    <Link onClick={handleClick} to="/reviews">Reviews</Link>
+                    <Link to="/reviews">Reviews</Link>
                 </li>
                 <li>
-                    <Link onClick={handleClick} to="/contact">Contact Us</Link>
+                    <Link to="/contact">Contact Us</Link>
                 </li>
             </ul>
         </nav>
@@ -51,25 +30,21 @@ const Navbar = () => {
 const Header = () => {
     const menuRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false);
+    const isMobile = useMediaQuery({ maxWidth: 768 });
+    const history = useHistory(); 
+
 
     const toggleMenu = ()=> {
         setIsOpen(!isOpen);
-        if(menuRef.current !== null) {
-            menuRef.current.classList.toggle('show__menu');
-        }
     };
-    const isMobile = useMediaQuery({ maxWidth: 768 }); //adjust breakpoint as needed
 
-    const handleClick = e=>{
-        e.preventDefault()
+    const handleMenuClick = () => {
+        toggleMenu();
+    };
 
-        const targetAttr = e.target.getAttribute('href')
-        const location = document.querySelector(targetAttr).offsetTop
-
-        window.scrollTo({
-            top: location - 80,
-            left: 0,
-        });
+    const handleLinkClick = (path) => {
+        toggleMenu();
+        history.push(path);
     };
 
     return (
@@ -83,22 +58,19 @@ const Header = () => {
                                 <img src={logo} alt="" />
                             </Link>
                         </div>
-                        <h2 className="main__head">Fitness with Gaby</h2>
+                        <h2 className="main__head hidden md:block">Fitness with Gaby</h2>
                     </div>
                     {/* Navigation links */}
-                    <div className={`navigation flex items-center gap-10 ${isMobile ? 'dark:bg-primaryColor' : ''}`}>
-                        <Navbar />
+                    <div className={`navigation flex items-center gap-10 ${isMobile ? 'bg-[#3cc4bd]' : ''}`}>
+                        <Navbar isOpen={isOpen}/>
                     </div>
                     {/* Additional items on the right */}
-                    <div className="nav__right">
-                        {/* <Link to="/">
-                            <button className="register__btn">Contact Me</button>
-                        </Link>                         */}
+                    <div className="nav__right flex items-center gap-4">
                         <span 
-                            className="mobile_menu md:hidden text-white text-2xl cursor-pointer bg-[--heading-color]"
-                            onClick={toggleMenu}
+                            className="mobile_menu md:hidden text-white text-2xl cursor-pointer bg-black"
+                            onClick={handleMenuClick}
                         >
-                            <i className="ri-menu-line"></i>
+                            <i className={`ri-${isOpen ? 'close-line' : 'menu-line'}`}></i>
                         </span>
                     </div>
                 </div>
