@@ -9,7 +9,7 @@ const Contact = () => {
   const [result, showResult] = useState(false);
   const Result = () => {
     return (
-      <p className="text-white">Message sent! I'll be in touch soon.</p>
+      <p className="text-white pt-4 text-bold">Message sent! I'll be in touch soon.</p>
     );
   };
 
@@ -73,7 +73,7 @@ const Contact = () => {
           </div>
 
           <div className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-black px-4 lg:px-8 py-8">
-            <form className="w-full" onSubmit={sendEmail} useRef={form}>
+            <form className="w-full" onSubmit={sendEmail} ref={form}>
               <div className="mb-5">
                 <input
                   type="text"
