@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 // import emailjs from "emailjs-com";
 import "../../assets/tailwind.css";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const form = useRef();
