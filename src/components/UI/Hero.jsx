@@ -27,7 +27,7 @@ const Hero = () => {
                         the perfect complement to any fitness routine, helping to prevent injury,
                         relieve muscle tension, and improve overall recovery time.
                         With us, you'll be one step closer to reaching your fitness & wellness goals.<br /><br />
-                        Book with us today & experience the difference!
+                        <span className='herop'>Book with us today & experience the difference!</span>
                     </p>
 
                     <div className="hero__btns">

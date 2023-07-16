@@ -24,7 +24,7 @@ export default function Testimonials() {
                         Reviews
                     </h2>
                 {/* <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-black shadow-xl shadow-indigo-600/10 ring-1     ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" /> */}
-                <div className="mx-auto max-w-2xl lg:max-w-4xl border border-[#3cc4bd] border-2 rounded mb-5">
+                <div className="mx-auto max-w-2xl lg:max-w-4xl border-[#3cc4bd] border-2 rounded mb-5">
                     {/* <img className="mx-auto h-12" src={logo} alt="" /> */}
                     <figure className="mt-10">
                         <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
@@ -51,7 +51,7 @@ export default function Testimonials() {
                 </div>
                 <br />
 
-                <div className="mx-auto max-w-2xl lg:max-w-4xl border border-[#3cc4bd] border-2 rounded mb-5">
+                <div className="mx-auto max-w-2xl lg:max-w-4xl border-[#3cc4bd] border-2 rounded mb-5">
                     {/* <img className="mx-auto h-12" src={logo} alt="" /> */}
                     <figure className="mt-10">
                         <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">

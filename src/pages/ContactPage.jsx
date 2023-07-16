@@ -12,7 +12,7 @@ const ContactPage = () => {
 
   return (
     <div>
-        <Contact />
+      <Contact />
     </div>
   );
 };

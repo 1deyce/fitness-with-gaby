@@ -1,66 +1,65 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 // import emailjs from "emailjs-com";
 import "../../assets/tailwind.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
-//   const form = useRef();
+  const form = useRef();
 
-//   const Result = () => {
-//     return (
-//       <p className="text-primaryColor">Message sent! I'll be in touch soon.</p>
-//     );
-//   };
+  const Result = () => {
+    return (
+      <p className="text-white">Message sent! I'll be in touch soon.</p>
+    );
+  };
 
-//   const [result, showResult] = useState(false);
+  const [result, showResult] = useState(false);
 
-//   const sendEmail = (e) => {
-//     e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-//     emailjs
-//       .sendForm(
-//         'service_cwy9x0l',
-//         'template_ca83rx8',
-//         form.current,
-//         'awgSNM6x33L8HH2UI'
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text);
-//           showResult(true);
-//         },
-//         (error) => {
-//           console.log(error.text);
-//           showResult(true);
-//         }
-//       );
+    emailjs
+      .sendForm(
+        'service_cwy9x0l',
+        'template_ca83rx8',
+        form.current,
+        'awgSNM6x33L8HH2UI'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          showResult(true);
+        },
+        (error) => {
+          console.log(error.text);
+          showResult(true);
+        }
+      );
 
-//     e.target.reset();
-//   };
+    e.target.reset();
+  };
 
-//   const [email, setEmail] = useState('');
-//   const [error, setError] = useState(null);
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState(null);
 
-//   function isValidEmail(email) {
-//     return /\S+@\S+\.\S+/.test(email);
-//   }
+  function isValidEmail(email) {
+    return /\S+@\S+\.\S+/.test(email);
+  }
 
-//   const handleChange = e => {
-//     if (!isValidEmail(e.target.value)) {
-//       setError('Be sure to enter a valid email');
-//     } else {
-//       setError(null);
-//     }
+  const handleChange = e => {
+    if (!isValidEmail(e.target.value)) {
+      setError('Be sure to enter a valid email');
+    } else {
+      setError(null);
+    }
 
-//     setEmail(e.target.value);
-//   };
+    setEmail(e.target.value);
+  };
 
   return (
-    <section id="contact" className="bg-[#f7fff7] pb-16 dark:bg-black">
+    <section id="contact" className="bg-black pb-16">
       <div className="container">
-        <h2 className="text-headingColor dark:text-white font-[700] text-[2.5rem] mb-8">
-          <span className="border-b-2 border-solid border-smallTextColor dark:border-primaryColor">
-            Get in touch
-          </span>
+        <h2 className="text-white font-[700] text-[50px] mb-8 text-center">
+            Contact Us
         </h2>
         <div className="md:flex justify-between items-center">
           <div className="w-full md:w-1/2 h-[300px] sm:h-[450px]">
@@ -74,13 +73,13 @@ const Contact = () => {
             </iframe>
           </div>
 
-          <div className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-indigo-100 dark:bg-black px-4 lg:px-8 py-8">
-            <form className="w-full" onSubmit={''} ref={''}>
+          <div className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-black px-4 lg:px-8 py-8">
+            <form className="w-full" onSubmit={''} useRef={''}>
               <div className="mb-5">
                 <input
                   type="text"
                   placeholder="Enter your name"
-                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] dark:text-white"
+                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] text-white"
                   name="fullName" // Add a name attribute to the input
                   required
                 />
@@ -89,20 +88,20 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="Enter your email"
-                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] dark:text-white"
+                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] text-white"
                   name="email" // Add a name attribute to the input
                 //   onChange={handleChange}
                 //   value={email}
                   required
                 />
 
-                {/* {error && <h2 style={{color: 'red'}}>{error}</h2>} */}
+                {error && <h2 style={{color: 'red'}}>{error}</h2>}
               </div>
               <div className="mb-5">
                 <input
                   type="text"
                   placeholder="Subject"
-                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] dark:text-white"
+                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] text-white"
                   name="subject" // Add a name attribute to the input
                   required
                 />
@@ -113,17 +112,17 @@ const Contact = () => {
                   type="text"
                   rows={3}
                   placeholder="Write your message"
-                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] dark:text-white resize-none"
+                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] text-white resize-none"
                   name="message" // Add a name attribute to the textarea
                   required
                 />
               </div>
 
-              <button className="w-full p-3 focus:outline-none rounded-[5px] bg-smallTextColor dark:bg-primaryColor text-white hover:bg-headingColor dark:hover:bg-white dark:hover:text-smallTextColor text-center ease-linear duration-150">
+              <button className="w-full p-3 focus:outline-none rounded-[5px] bg-white text-black hover:bg-[--heading-color] hover:text-white text-center ease-linear duration-150">
                 Send Message
               </button>
 
-              {/* {result && <Result />} */}
+              {result && <Result />}
             </form>
           </div>
         </div>
