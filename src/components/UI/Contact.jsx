@@ -1,28 +1,27 @@
 import React, { useRef, useState } from "react";
 // import emailjs from "emailjs-com";
 import "../../assets/tailwind.css";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const form = useRef();
 
+  const [result, showResult] = useState(false);
   const Result = () => {
     return (
       <p className="text-white">Message sent! I'll be in touch soon.</p>
     );
   };
 
-  const [result, showResult] = useState(false);
-
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        'service_cwy9x0l',
-        'template_ca83rx8',
+        'service_4apgiwb',
+        'template_93cay28',
         form.current,
-        'awgSNM6x33L8HH2UI'
+        'awgSNM6x33L8HH2UI',
       )
       .then(
         (result) => {
@@ -58,7 +57,7 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-black pb-16">
       <div className="container">
-        <h2 className="text-white font-[700] text-[50px] mb-8 text-center">
+        <h2 className="text-white font-[700] text-[50px] mb-10 text-center">
             Contact Us
         </h2>
         <div className="md:flex justify-between items-center">
@@ -74,7 +73,7 @@ const Contact = () => {
           </div>
 
           <div className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-black px-4 lg:px-8 py-8">
-            <form className="w-full" onSubmit={''} useRef={''}>
+            <form className="w-full" onSubmit={sendEmail} useRef={form}>
               <div className="mb-5">
                 <input
                   type="text"
@@ -90,8 +89,8 @@ const Contact = () => {
                   placeholder="Enter your email"
                   className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] text-white"
                   name="email" // Add a name attribute to the input
-                //   onChange={handleChange}
-                //   value={email}
+                  onChange={handleChange}
+                  value={email}
                   required
                 />
 
@@ -118,7 +117,7 @@ const Contact = () => {
                 />
               </div>
 
-              <button className="w-full p-3 focus:outline-none rounded-[5px] bg-white text-black hover:bg-[--heading-color] hover:text-white text-center ease-linear duration-150">
+              <button className="register__btn w-full p-3 focus:outline-none rounded-[5px] text-black hover:bg-[--heading-color] hover:text-white text-center ease-linear duration-150">
                 Send Message
               </button>
 

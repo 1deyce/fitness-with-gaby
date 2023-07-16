@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "autoprefixer": "^9.8.6",
+    "email-js": "^2.0.2",
     "postcss": "^8.4.26",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
