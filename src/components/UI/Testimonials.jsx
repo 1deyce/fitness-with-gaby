@@ -15,12 +15,9 @@ import "../../assets/tailwind.css";
 export default function Testimonials() {
     return (
         <>
-            <section className="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:px-8">
-                <div className="absolute inset-0 -z-10 bg-black opacity-20" />
-                    <h2 
-                        style={{ color: 'white' }} 
-                        className="section__title text-center font-semibold text-[50px] mb-5"
-                    >
+            <section className="relative isolate overflow-hidden bg-black px-6 py-10 sm:py-16 lg:px-8">
+                <div className="absolute mx-auto max-w-2xl lg:max-w-4xl inset-0 -z-10 bg-black opacity-20" />
+                    <h2 className="section__title text-center font-semibold text-[50px] mb-5"> 
                         Reviews
                     </h2>
                 {/* <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-black shadow-xl shadow-indigo-600/10 ring-1     ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" /> */}
@@ -49,6 +46,7 @@ export default function Testimonials() {
                         </figcaption>
                     </figure>
                 </div>
+
                 <br />
 
                 <div className="mx-auto max-w-2xl lg:max-w-4xl border-[#3cc4bd] border-2 rounded mb-5">

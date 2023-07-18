@@ -1,5 +1,6 @@
 import React from 'react'
 import "../../styles/pricing.css";
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
     return <section>
@@ -37,9 +38,10 @@ const Pricing = () => {
                             </li>
                         </ul>
 
-                        <button className="register__btn">
-                            Join Now
-                        </button>
+                    <Link to="/contact">
+                        <button className="register__btn">Join Now</button>
+                    </Link>
+
                     </div>
                 </div>
 
@@ -65,9 +67,9 @@ const Pricing = () => {
                             </li>
                         </ul>
 
-                        <button className="register__btn">
-                            Join Now
-                        </button>
+                        <Link to="/contact">
+                            <button className="register__btn">Join Now</button>
+                        </Link>
                     </div>
                 </div>
 
@@ -93,9 +95,9 @@ const Pricing = () => {
                             </li>
                         </ul>
 
-                        <button className="register__btn">
-                            Book Now
-                        </button>
+                        <Link to="/contact">
+                            <button className="register__btn">Book Now</button>
+                        </Link>
                     </div>
                 </div>
             </div>
