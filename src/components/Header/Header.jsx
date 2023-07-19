@@ -139,7 +139,7 @@ export default function Header() {
                         key={item.name}
                         to={item.href}
                         activeClassName='bg-black text-white'
-                        className='text-white hover:bg-[--heading-color] hover:text-black rounded-xl px-3 py-2 text-md font-[600] text-center ml-10 mt-1'
+                        className='text-white hover:bg-[--heading-color] hover:text-black rounded-xl px-7 py-2 text-md font-[600] text-center ml-10 mt-1'
                       >
                         {item.name}
                       </NavLink>
