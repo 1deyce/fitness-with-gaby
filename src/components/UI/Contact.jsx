@@ -56,11 +56,19 @@ const Contact = () => {
 
   return (
     <section id="contact" className="bg-black pb-16">
-      <div className="container">
-        <h2 className="text-white font-[700] text-[50px] mb-10 text-center">
+      <div className="container text-center">
+        <h2 className="text-white font-[700] text-[50px] mb-5 text-center">
             Contact Us
         </h2>
-        <div className="md:flex justify-between items-center">
+        <span className='w-[35px] h-[35px] p-1 rounded-[50px] cursor-pointer text-center mb-5'>
+          <a 
+            href="https://www.instagram.com/fitnesswithgaby_/" 
+            className='text-white font-[500] text-[30px] hover:text-white'
+          >
+            <i class="ri-instagram-line"></i>
+          </a>
+        </span>
+        <div className="md:flex justify-between items-center mt-5">
           <div className="w-full md:w-1/2 h-[300px] sm:h-[450px]">
             {/* Google Maps iframe */}
             <iframe
