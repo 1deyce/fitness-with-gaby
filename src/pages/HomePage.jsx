@@ -13,8 +13,8 @@ const Home = () => {
 
   return (
     <div>
-      <Hero />
       <Start />
+      <Hero />
     </div>
   );
 };

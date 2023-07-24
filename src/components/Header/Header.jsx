@@ -85,8 +85,8 @@
 // export default Header;
 
 import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Disclosure } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { NavLink, Link } from 'react-router-dom'
 import logo from "../../assets/img/logo1.jpg";
 
@@ -94,7 +94,7 @@ const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Bookings', href: '/bookings', current: false },
   { name: 'Reviews', href: '/reviews', current: false },
-  { name: 'Contact Us', href: 'contact', current: false },
+  { name: 'Contact Us', href: '/contact', current: false },
 ]
 
 function classNames(...classes) {
@@ -125,6 +125,7 @@ export default function Header() {
                         <img
                             className="h-9 w-auto cursor-pointer mt-1 ml-5"
                             src={logo}
+                            title='Fitness with Gaby'
                             alt="Fitness With Gaby"
                         />
                     </Link>

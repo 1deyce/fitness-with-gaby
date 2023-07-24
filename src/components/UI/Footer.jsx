@@ -1,159 +1,58 @@
 import React from 'react';
-import "../../styles/footer.css";
-// import logo from "../../assets/img/logo1.jpg"
-// import { Link } from 'react-router-dom';
-
-
-// const Footer = () => {
-//     const year = new Date().getFullYear()  
-
-//     return <section>
-//         <div className="footer-container">
-//             <footer className="footer">
-//                 <div className="container">
-//                     <div className="footer__wrapper">
-//                         <div className="footer__box">
-//                             <div className="logo">
-//                                 <div className="logo__img">
-//                                     <img src={logo} alt="" />
-//                                 </div>
-//                                 <h2>Fitness with Gaby</h2>
-//                             </div>
-//                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore nisi accusamus distinctio eaque, quis minus.</p>
-//                         </div>
-
-//                         <div className="footer__box">
-//                             <h4 className="footer__title">Quick Links</h4>
-
-//                             <ul className="footer__links">
-//                                 <li>
-//                                     <Link to="/">Home</Link>
-//                                 </li>
-//                                 <li>
-//                                     <Link to="/bookings">Bookings</Link>
-//                                 </li>
-//                                 <li>
-//                                     <Link to="/reviews">Reviews</Link>
-//                                 </li>
-//                             </ul>
-//                         </div>
-//                     </div>
-
-//                     <p className="copyright">
-//                         © {year} developed by Keenan. All Rights Reserved.
-//                     </p>
-//                 </div>
-//             </footer>
-//         </div>
-//     </section>
-// }
-
-// export default Footer;
+// import "../../styles/footer.css";
+import { Link } from 'react-router-dom';
+import logo from "../../assets/img/logo1.jpg"
 
 const Footer = () => {
 
     const year = new Date().getFullYear();
 
     return ( 
-        <footer className='bg-[#12141e] pt-12'>
+        <footer className='pt-10'>
         {/* =========== footer top =========== */}
-        <div className='container'>
-            <div className='sm:flex items-center justify-between md:gap-8'>
-                <div className='w-full sm:w-1/2'>
-                    <h2 className='text-[26px] leading-10 text-white dark:text-white font-[600] mb-5 md:text-[2rem] bg-[#12141e]'>
-                        Are you ready to make a change?
-                    </h2>
-                    <a href="#contact">
-                        <button 
-                            className='text-white font-[500] flex items-center gap-2 ease-in duration-300 py-2 px-4 rounded-[8px] bg-[#12141e]'
-                        >
-                            <i class="ri-mail-line"></i> Hire Me
-                        </button>
-                    </a>
-                </div>
-
-                <div className="w-full sm:w-1/2">
-                    <p className='text-gray-300 leading-7 mt-4 sm:mt-0'>
-                    Feel free to reach out to me through the contact information provided. I look forward to connecting with you !
-                    </p>
-
-                    <div className='flex items-center gap-4 flex-wrap md:gap-8 mt-10'>
-                        <span 
-                            className='text-gray-300 font-[600] text-[15px]'>
-                                Find me here:
-                        </span>
-
-                        <span className='w-[35px] h-[35px] bg-[--heading-color] p-1 rounded-[50px] cursor-pointer text-center'>
-                            <a 
-                                href="https://www.linkedin.com/in/keenan-deyce-5b9ab3219/" 
-                                className='text-gray-300 font-[500] text-[18px]'
-                            >
-                                <i class="ri-linkedin-line"></i>
-                            </a>
-                        </span>
-
-                        <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
-                            <a 
-                                href="https://github.com/1deyce" 
-                                className='text-gray-300 font-[500] text-[18px]'
-                            >
-                                <i class="ri-github-line"></i>
-                            </a>
-                        </span>
-
-                        {/* <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
-                            <a 
-                                href="https://www.instagram.com/1deycefr/" 
-                                className='text-gray-300 font-[500] text-[18px]'
-                            >
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                        </span> */}
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <ul className='flex items-center justify-center gap-10 mt-10'>
-                    <li><a className='text-gray-400 font-[600] hover:text-primaryColor' href="#about">About</a></li>
-                    <li><a className='text-gray-400 font-[600] hover:text-primaryColor' href="#services">Services</a></li>
-                    <li><a className='text-gray-400 font-[600] hover:text-primaryColor' href="#portfolio">Portfolio</a></li>
-                    <li><a className='text-gray-400 font-[600] hover:text-primaryColor' href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
         {/* =========== footer top end =========== */}
         {/* =========== footer bottom =========== */}
-        <div className='bg-[#1b1e29] py-4 mt-14'>
+        <div className='bg-black py-4 mt-10 mb-2 border-2 border-[--heading-color]'>
             <div className="container">
                 <div className="flex items-center justify-center sm:justify-between">
 
                     <div className='hidden sm:block'>
                         <div className="flex items-center gap-[10px]">
-                            <span className='w-[50px] h-[40px] rounded-full bg-[#2b2d33] text-white font-[500] text-[18px] flex items-center justify-center cursor-pointer'>
-                                FWG
-                            </span>
+                            <Link to='/'>
+                                <img
+                                    className="h-9 w-auto cursor-pointer ml-5 bg-[#1b1e29]"
+                                    src={logo}
+                                    title='Fitness with Gaby'
+                                    alt="Fitness With Gaby"
+                                />
+                            </Link>
 
-                            <div className='leading-[20px]'>
-                                <h2 className='text-gray-200 font-[500] text-[18px]'>
-                                    Fitness with Gaby
+                            <div className='leading-[20px] bg-black'>
+                                <h2 className='text-gray-200 font-[00] text-[18px] bg-[#1b1e29] mb-1'>
+                                    FITNESS WITH GABY
                                 </h2>
-                                <p className='text-gray-400 text-[14px] font-[500]'>
-                                    Personal
-                                </p>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <p className='text-gray-400 text-[14px]'>© {year} developed by Keenan - All Rights Reserved.</p>
+                        <ul className='flex items-center justify-center gap-10 mb-1'>
+                            <li><a className='text-white font-[600] hover:text-[--heading-color]' href="/">Home</a></li>
+                            <li><a className='text-white font-[600] hover:text-[--heading-color]' href="/bookings">Bookings</a></li>
+                            <li><a className='text-white font-[600] hover:text-[--heading-color]' href="/reviews">Reviews</a></li>
+                            <li><a className='text-white font-[600] hover:text-[--heading-color]' href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div className='bg-black'>
+                        <p className='text-gray-600 text-[15px] text-center font-[600] bg-[#1b1e29] mt-2'>© {year} Fitness with Gaby™ - All Rights Reserved.</p>
                     </div>
 
                 </div>
             </div>
         </div>
         {/* =========== footer bottom =========== */}
-    </footer>
+        </footer>
     );
 };
 

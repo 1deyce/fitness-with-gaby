@@ -65,6 +65,16 @@ p {
     /* background-color: #fff; */
 }
 
+.hero__wrapper {
+    /* Set flex direction to row on large screens (md breakpoint) */
+    flex-direction: row;
+}
+  /* On smaller screens, change the flex direction to column to stack the image and content */
+@media (max-width: 767px) {
+    .hero__wrapper {
+        flex-direction: column;
+    }
+}
 
 /*.box-01 {
     width: 400px;
