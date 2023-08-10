@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 
 
 const Start = () => {
-    return <section className=''>
-            <div className="relative isolate px-6 pt-14 lg:px-8">
-                <div className="mx-auto max-w-2xl sm:py-48 lg:py-56">
+    return <section id='hero'>
+            <div className="relative isolate px-6 lg:px-8">
+                <div className="mx-auto max-w-3xl sm:py-48 lg:py-56">
                 <div className="text-center">
                     <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl mb-10">
                         Let's get stronger!
@@ -31,9 +31,11 @@ const Start = () => {
                     <Link to="/bookings">
                         <button className="register__btn">Get Started</button>
                     </Link>
-                    <Link className='text-sm font-semibold leading-6 text-white hover:text-[--heading-color]' to='#about'>
+                    <a href='#about'
+                        className='text-sm font-semibold leading-6 text-white hover:text-[--heading-color]' to='#about'
+                    >
                         Learn more <span aria-hidden="true">→</span>
-                    </Link>
+                    </a>
                     </div>
                 </div>
                 </div>

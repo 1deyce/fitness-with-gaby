@@ -14,7 +14,7 @@ const Hero = () => {
                 </div>
                 <div className='hero__content md:w-1/2 md:pl-8 w-full'>
                     <h2 className="section__title">
-                            About Us
+                        About Us
                     </h2>   
                     <p className='sectionp'>
                         <span className='herop'>Fitness with Gaby</span> is the go-to destination for anyone looking

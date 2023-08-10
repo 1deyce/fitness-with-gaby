@@ -12,10 +12,10 @@ const Home = () => {
   usePageTitle('Fitness With Gaby');
 
   return (
-    <div>
+    <section className='pt-0 mt-0'>
       <Start />
       <Hero />
-    </div>
+    </section>
   );
 };
 
