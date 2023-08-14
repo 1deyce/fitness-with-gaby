@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    column-gap: 2rem;
+    column-gap: 5rem;
 }
 
 .pricing__item {
