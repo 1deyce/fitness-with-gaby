@@ -12,9 +12,9 @@ const Hero = () => {
           {/* ========== hero img ========== */}
           <div className="hero__img flex md:w-1/2">
             <img
-              className="border-black rounded-full border-6 h-[350px] flex my-40 mx-40 ml-20"
+              className="rounded-full border-6 h-[450px] my-0 mr-40"
               src={geby}
-              alt=""
+              alt="Gaby"
             />
           </div>
           <div className="hero__content md:w-1/2 md:pl-8 w-full">

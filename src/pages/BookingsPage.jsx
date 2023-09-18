@@ -12,7 +12,7 @@ const BookingsPage = () => {
 
   return (
     <div>
-        <Pricing />
+      <Pricing />
     </div>
   );
 };

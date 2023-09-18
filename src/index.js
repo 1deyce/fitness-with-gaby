@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./pages/Layout";
 import BookingsPage from "./pages/BookingsPage";
 import ReviewsPage from "./pages/ReviewsPage";
+import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import NoPage from "./pages/NoPage";
 import "./App.css";
@@ -15,7 +16,6 @@ import "./styles/footer.css";
 import "./styles/pricing.css";
 import "./styles/start.css";
 // import './assets/main.css';
-import ContactPage from "./pages/ContactPage";
 
 export default function App() {
   return (

@@ -26,7 +26,6 @@
 
 .pricing__item {
     box-shadow: var(--heading-color) 0px 5px 15px 0px;
-    border-radius: 10px;
     width: 33%;
     background: var(--bg-gradient);
 }
@@ -74,7 +73,6 @@
 
 .services {
     text-align: center;
-
 }
 
 .services button {

@@ -6,7 +6,7 @@
   --primary-color: #fff;
   --heading-color: #3cc4bd;
   --bg-gradient: linear-gradient(300.9deg, rgb(49, 199, 171) 27.8%, rgb(32, 170, 183) 67%);
-  --font-name: "Lato", sans-serif;
+  --font-name: "Urbanist", sans-serif;
 
   /* 
     #9785f2
@@ -67,7 +67,7 @@ p {
 
 /* ======= reusable class ======== */
 .container {
-  width: 1280px;
+  width: 1920px;
   padding: 0px 15px;
   margin: auto;
 }
@@ -93,6 +93,12 @@ p {
 
 .register__btn {
   color: black;
+}
+
+.btn {
+  background: var(--bg-gradient);
+  color: black;
+  
 }
 
 ::selection {
