@@ -11,19 +11,19 @@ const Hero = () => {
             <div className="w-full lg:w-7/12 flex flex-col justify-center lg:ml-36">
                 <h1 className="text-3xl lg:text-5xl font-bold leading-8 text-white text-center pb-4">About Us</h1>
                 <p
-                  className="text-center font-normal text-base leading-6 text-[--heading-color]"
+                  className="text-center text-lg font-normal leading-6 text-[--heading-color]"
                 >              
                   Beyond bootcamp and personal training, we offer a range of massage
                   services to ensure our clients are feeling & performing at their
-                  best. Our <span className="text-white">Full Body</span> Sport Massage &
-                  <span className="text-white"> Targeted Muscle Group</span> Sport
+                  best. Our <span className="text-white font-[600]">Full Body</span> Sport Massage &
+                  <span className="text-white font-[600]"> Targeted Muscle Group</span> Sport
                   Massage are the perfect complement to any fitness routine, helping
                   to prevent injury, relieve muscle tension, and improve overall
                   recovery time. With us, you'll be one step closer to reaching your
                   fitness & wellness goals.
                   <br />
                   <br />
-                  <span className="text-white">
+                  <span className="text-white font-[600]">
                     Book with us today & experience the difference!
                   </span>
                 </p>
