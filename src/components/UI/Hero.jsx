@@ -1,76 +1,46 @@
 import React from "react";
 import "../../styles/hero.css";
 import geby from "../../assets/img/geby.png";
-// import { RiHeartPulseLine, RiMapPinLine } from 'react-icons/ri';
 import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
     <section id="about">
-      <div className="container">
-        <div className="hero__wrapper mr-20 pr-20 flex flex-col md:flex-row items-start">
-          {/* ========== hero img ========== */}
-          <div className="hero__img flex md:w-1/2">
-            <img
-              className="rounded-full border-6 h-[450px] my-0 mr-40"
-              src={geby}
-              alt="Gaby"
-            />
-          </div>
-          <div className="hero__content md:w-1/2 md:pl-8 w-full">
-            <h2 className="section__title">About Us</h2>
-            <p className="sectionp">
-              Beyond bootcamp and personal training, we offer a range of massage
-              services to ensure our clients are feeling & performing at their
-              best. Our <span className="herop">Full Body</span> Sport Massage &
-              <span className="herop"> Targeted Muscle Group</span> Sport
-              Massage are the perfect complement to any fitness routine, helping
-              to prevent injury, relieve muscle tension, and improve overall
-              recovery time. With us, you'll be one step closer to reaching your
-              fitness & wellness goals.
-              <br />
-              <br />
-              <span className="herop">
-                Book with us today & experience the difference!
-              </span>
-            </p>
-            <div className="w-full flex justify-center">
-              <Link to="/bookings">
-                <button className="register__btn">Get Started</button>
-              </Link>
+      <div className="2xl:container 2xl:mx-auto lg:py-12 lg:px-20 md:py-12 md:px-6 py-9 px-4">
+        <div className="flex flex-col lg:flex-row justify-between gap-8">
+            <div className="w-full lg:w-7/12 flex flex-col justify-center lg:ml-36">
+                <h1 className="text-3xl lg:text-5xl font-bold leading-8 text-white text-center pb-4">About Us</h1>
+                <p
+                  className="text-center font-normal text-base leading-6 text-[--heading-color]"
+                >              
+                  Beyond bootcamp and personal training, we offer a range of massage
+                  services to ensure our clients are feeling & performing at their
+                  best. Our <span className="text-white">Full Body</span> Sport Massage &
+                  <span className="text-white"> Targeted Muscle Group</span> Sport
+                  Massage are the perfect complement to any fitness routine, helping
+                  to prevent injury, relieve muscle tension, and improve overall
+                  recovery time. With us, you'll be one step closer to reaching your
+                  fitness & wellness goals.
+                  <br />
+                  <br />
+                  <span className="text-white">
+                    Book with us today & experience the difference!
+                  </span>
+                </p>
+              <div className="mt-6 flex items-center justify-center gap-x-6">
+                <Link to="/bookings">
+                  <button className="register__btn">Get Started</button>
+                </Link>
+              </div>
             </div>
-          </div>
+            <div className="flex justify-center w-full lg:w-8/12">
+                <img 
+                  className="rounded-full h-[450px] ml-6 sm:ml-0" 
+                  src={geby} 
+                  alt="Woman" 
+                />
+            </div>
         </div>
-
-        {/* ========== hero img ========== */}
-        {/* <div className="hero__img">
-                    <div className="hero__img-wrapper">
-                        <div className="box-01">
-                            <div className="box-02">
-                                <div className="box-03">
-                                    <div className="box__img">
-                                        <img src={heroImg} alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="heart__rate">
-                            <h5>Heart Rate</h5>
-                            <span style={{color: 'var(--heading-color)'}}><RiHeartPulseLine size={30} /></span>
-                            <h6>2567 BPM</h6>
-                        </div>
-                        <div className="gym__location">
-                            <span style={{color: 'var(--heading-color)'}}><RiMapPinLine size={30} /></span>
-                            <h5>Find a new <br />
-                                gym near you
-                            </h5>
-                        </div>    
-                        <div className="dumbell__icon">
-                            <img src={dumbleIcon} alt="" />
-                        </div>
-                    </div>
-                </div> */}
       </div>
     </section>
   );

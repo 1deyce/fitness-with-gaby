@@ -780,7 +780,7 @@ module.exports = {
       150: '1.5',
     },
     screens: {
-      sm: '640px',
+      sm: '320px',
       md: '768px',
       lg: '1024px',
       xl: '1280px',

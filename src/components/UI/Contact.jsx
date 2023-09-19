@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
-// import emailjs from "emailjs-com";
-import "../../assets/tailwind.css";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const [email, setEmail] = useState('');
+  const [error, setError] = useState(null);
   const form = useRef();
 
   const [result, showResult] = useState(false);
@@ -37,9 +37,6 @@ const Contact = () => {
     e.target.reset();
   };
 
-  const [email, setEmail] = useState('');
-  const [error, setError] = useState(null);
-
   function isValidEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
   }
@@ -55,75 +52,108 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-black pb-16">
-      <div className="container text-center">
-        <h2 className="text-white font-[700] text-[50px] mb-5 text-center">
+    <section id="contact" className="bg-black">
+      <div className="isolate px-6 py-16 sm:py-16 lg:px-8">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 
+            className="text-3xl font-bold text-white sm:text-6xl"
+          >
             Contact Us
-        </h2>
-        <div className="md:flex justify-between items-center mt-5">
-          <div className="w-full md:w-1/2 h-[300px] sm:h-[450px]">
-            {/* Google Maps iframe */}
-            <iframe
-              title="google-maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423812.32927425334!2d18.326422855396498!3d-33.91452907067648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2sCape%20Town!5e0!3m2!1sen!2sza!4v1682582910036!5m2!1sen!2sza" className="border-0 w-full h-full rounded-lg"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-
-          <div className="w-full mt-8 md:mt-0 md:w-1/2 sm:h-[450px] lg:flex items-center bg-black px-4 lg:px-8 py-8 rounded-lg">
-            <form className="w-full" onSubmit={sendEmail} ref={form}>
-              <div className="mb-5">
+          </h2>
+        </div>
+        <form 
+          ref={form} 
+          onSubmit={sendEmail} 
+          className="mx-auto mt-16 max-w-xl sm:mt-20"
+        >
+          <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+            <div className="sm:col-span-2">
+              <label 
+                htmlFor="full-name" 
+                className="w-full text-sm font-semibold leading-6 text-[--heading-color]"
+              >
+                Full name
+              </label>
+              <div className="mt-2.5">
                 <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] text-white"
-                  name="fullName"
                   required
+                  type="text"
+                  name="fullName"
+                  id="full-name"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
                 />
               </div>
-              <div className="mb-5">
+            </div>
+            <div className="sm:col-span-2">
+              <label 
+                htmlFor="email" 
+                className="block text-sm font-semibold leading-6 text-[--heading-color]"
+              >
+                Email
+              </label>
+              <div className="mt-2.5">
                 <input
-                  type="text"
-                  placeholder="Enter your email"
-                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] text-white"
+                  required
+                  type="email"
                   name="email"
+                  id="email"
+                  autoComplete="email"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
                   onChange={handleChange}
                   value={email}
-                  required
                 />
 
                 {error && <h2 style={{color: 'red'}}>{error}</h2>}
               </div>
-              <div className="mb-5">
+            </div>
+            <div className="sm:col-span-2">
+              <label 
+                htmlFor="subject" 
+                className="block text-sm font-semibold leading-6 text-[--heading-color]"
+              >
+                Subject / Service
+              </label>
+              <div className="mt-2.5">
                 <input
+                  required
                   type="text"
-                  placeholder="Subject / Service"
-                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] text-white"
                   name="subject"
-                  required
+                  id="subject"
+                  autoComplete="subject"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
                 />
               </div>
-
-              <div className="mb-5">
+            </div>
+            <div className="sm:col-span-2">
+              <label 
+                htmlFor="message" 
+                className="block text-sm font-semibold leading-6 text-[--heading-color]"
+              >
+                Message
+              </label>
+              <div className="mt-2.5">
                 <textarea
-                  type="text"
-                  rows={3}
-                  placeholder="Write your message"
-                  className="w-full p-3 focus:outline-none rounded-[5px] dark:bg-[#2b2d33] text-white resize-none"
-                  name="message"
                   required
+                  name="message"
+                  id="message"
+                  rows={3}
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
+                  defaultValue={''}
                 />
               </div>
-
-              <button className="register__btn w-full p-3 focus:outline-none rounded-[5px] text-black hover:bg-[--heading-color] hover:text-white text-center ease-linear duration-150">
-                Send Message
-              </button>
-              {result && <Result />}
-            </form>
+            </div>
           </div>
-        </div>
+          <div className="mt-10">
+            <button
+              type="submit"
+              className="block w-full rounded-md btn px-3.5 py-2.5 text-center text-sm font-semibold hover:text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[--heading-color]"
+            >
+              Let's talk
+            </button>
+            {result && <Result />}
+          </div>
+        </form>
       </div>
     </section>
   );
