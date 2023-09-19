@@ -23,9 +23,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
-          <Route path="bookings" element={<BookingsPage />} />
-          <Route path="reviews" element={<ReviewsPage />} />
-          <Route path="contact" element={<ContactPage />} />
+          <Route path="/bookings" element={<BookingsPage />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
