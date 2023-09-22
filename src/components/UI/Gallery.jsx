@@ -19,7 +19,7 @@ const Gallery = () => {
         <Fade 
           duration={3000}
         >
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 m-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 m-20">
             <div className="grid gap-4">
               <div>
                 <img 
