@@ -38,7 +38,7 @@ const About = () => {
             </div>
             <div className="flex justify-center w-full lg:w-8/12 mt-20 sm:mt-0">
                 <img 
-                  className="rounded-full h-[450px] ml-6 sm:ml-0" 
+                  className="rounded-full h-[500px] ml-6 sm:ml-0" 
                   src={geby} 
                   alt="Woman" 
                 />
