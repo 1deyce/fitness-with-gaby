@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className="bg-black">
       <div className="2xl:container 2xl:mx-auto lg:py-12 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <div className="flex flex-col lg:flex-row justify-between gap-8">
-            <div className="w-full lg:w-12/12 flex flex-col justify-center lg:ml-36">
+            <div className="w-full lg:w-12/12 flex flex-col justify-center lg:ml-24">
                 <h1 className="text-3xl lg:text-5xl font-bold leading-8 text-white text-center pb-4">About Us</h1>
                 <p
                   className="text-center text-lg font-normal leading-6 text-[--heading-color]"
@@ -36,7 +36,7 @@ const About = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex justify-center w-full lg:w-8/12">
+            <div className="flex justify-center w-full lg:w-8/12 mt-20 sm:mt-0">
                 <img 
                   className="rounded-full h-[450px] ml-6 sm:ml-0" 
                   src={geby} 
