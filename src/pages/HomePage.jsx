@@ -11,7 +11,7 @@ const HomePage = () => {
   usePageTitle('Fitness With Gaby');
 
   return (
-    <section className='pt-0 mb-0 bg-black overflow-hidden'>
+    <section className='pt-0 mb-0 bg-black overflow-y-hidden'>
       <Hero />
       <Gallery />
     </section>
