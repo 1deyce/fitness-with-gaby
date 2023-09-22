@@ -22,7 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0);
+
 }
 
 body {
@@ -98,7 +98,6 @@ p {
 .btn {
   background: var(--bg-gradient);
   color: black;
-  
 }
 
 ::selection {

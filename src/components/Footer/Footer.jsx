@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     const year = new Date().getFullYear();
 
+    const footerLinks = [
+        { href: '/about', label: 'About' },
+        { href: '/bookings', label: 'Bookings' },
+        { href: '/reviews', label: 'Reviews' },
+        { href: '/contact', label: 'Contact' },
+    ];
+
+    const footerLinkStyles = "text-gray-500 transition hover:text-[--heading-color]";
+
     return ( 
         <footer className="bg-black">
             <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
@@ -11,37 +20,21 @@ const Footer = () => {
                     className="mt-16 border-t border-[--heading-color] pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24"
                 >
                     <ul className="flex flex-wrap justify-center gap-4 text-xs pb-3 lg:justify-end">
-                        <li>
-                            <Link
-                                to="/bookings"
-                                className="text-gray-500 transition hover:text-[--heading-color]"
-                            >
-                                Bookings
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link
-                                to="/reviews"
-                                className="text-gray-500 transition hover:text-[--heading-color]"
-                            >
-                                Reviews
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link
-                                to="/contact"
-                                className="text-gray-500 transition hover:text-[--heading-color]"
-                            >
-                                Contact Us
-                            </Link>
-                        </li>
+                        {footerLinks.map((item) => {
+                            return <li key={item.href}>
+                                <Link 
+                                    to={item.href} 
+                                    className={footerLinkStyles}
+                                >
+                                    {item.label}
+                                </Link>    
+                            </li>
+                        })}
                     </ul>
 
                     <p className='text-gray-400 text-[13px] text-center sm:mr-36 align-middle leading-4 font-thin'>© {year} - Fitness with Gaby. All Rights Reserved.</p>
 
-                    <ul className="flex justify-center gap-6 lg:justify-end">
+                    <ul className="flex justify-center gap-6 lg:justify-end mb-4">
                         <li>
                             <a
                                 href="https://www.instagram.com/fitnesswithgaby_/"

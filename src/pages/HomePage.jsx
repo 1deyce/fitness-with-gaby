@@ -1,22 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import Gallery from '../components/UI/Gallery';
 import Hero from '../components/UI/Hero';
-import Start from '../components/UI/Start';
-import { useEffect } from 'react';
 
 const usePageTitle = (title) => {
   useEffect(() => {
     document.title = title;
   }, [title])
 };
-const Home = () => {
+const HomePage = () => {
   usePageTitle('Fitness With Gaby');
 
   return (
-    <section className='pt-0 mt-0'>
-      <Start />
+    <section className='pt-0 mb-0 bg-black'>
       <Hero />
+      <Gallery />
     </section>
   );
 };
 
-export default Home;
+export default HomePage;

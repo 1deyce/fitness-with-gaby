@@ -5,155 +5,14 @@ import { Helmet } from "react-helmet";
 
 const Pricing = () => {
   return (
-    // <section>
-    //   <div className="container">
-    //     <div className="pricing__top">
-    //       <h2 
-    //         className="section__title"
-    //       >
-    //         Services
-    //       </h2>
-    //       <Helmet>
-    //         <script 
-    //           id='setmore_script' 
-    //           type='text/javascript' 
-    //           src='https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js'
-    //         />
-    //       </Helmet>
-    //     </div>
-
-    //     {/* ========== pricing wrapper ============ */}
-    //     <div className="pricing__wrapper">
-    //       <div className="pricing__item">
-    //         <div className="pricing__card-top">
-    //           <h2 className="section__title">Ladies Bootcamp</h2>
-    //           <h2 className="pricing section__title">
-    //             R450 <span className="highlights"> / 12 sessions</span>
-    //           </h2>
-    //         </div>
-
-    //         <div className="services">
-    //           <ul className="vertical-list">
-    //             <li>
-    //               <span>
-    //                 <i class="ri-checkbox-blank-circle-fill"></i>
-    //               </span>
-    //               <span class="high__v2">Venue :</span>Central Park, Century
-    //               City
-    //             </li>
-    //             <li>
-    //               <span>
-    //                 <i class="ri-checkbox-blank-circle-fill"></i>
-    //               </span>
-    //               <span class="high__v2">Days :</span>Mon, Wed & Thurs
-    //             </li>
-    //             <li>
-    //               <span>
-    //                 <i class="ri-checkbox-blank-circle-fill"></i>
-    //               </span>
-    //               <span class="high__v2">Times :</span>5h45 - 6h45 / 17h45 -
-    //               18h45
-    //             </li>
-    //           </ul>
-
-    //           <Link to="/contact">
-    //             <button className="register__btn">Join Now</button>
-    //           </Link>
-    //         </div>
-    //       </div>
-
-    //       <div className="pricing__item pricing__item-02">
-    //         <div className="pricing__card-top">
-    //           <h2 className="section__title">Personal Training</h2>
-    //           <h2 className="pricing section__title">
-    //             R600{" "}
-    //             <span className="highlights">
-    //               {" "}
-    //               / 12 sessions, area dependent
-    //             </span>
-    //           </h2>
-    //         </div>
-
-    //         <div className="services">
-    //           <ul className="vertical-list">
-    //             <li>
-    //               <span>
-    //                 <i class="ri-checkbox-blank-circle-fill"></i>
-    //               </span>
-    //               Venue :<span class="high__v2">Client's Home</span>
-    //             </li>
-    //             <li>
-    //               <span>
-    //                 <i class="ri-checkbox-blank-circle-fill"></i>
-    //               </span>
-    //               Days : <span class="high__v2">Availability Dependent</span>
-    //             </li>
-    //             <li>
-    //               <span>
-    //                 <i class="ri-checkbox-blank-circle-fill"></i>
-    //               </span>
-    //               Times :<span class="high__v2">Availability Dependent</span>
-    //             </li>
-    //           </ul>
-
-    //           <Link to="/contact">
-    //             <button className="register__btn">Join Now</button>
-    //           </Link>
-    //         </div>
-    //       </div>
-
-    //       <div className="pricing__item">
-    //         <div className="pricing__card-top">
-    //           <h2 className="section__title">Sport Massage</h2>
-    //           <h2 className="pricing section__title">
-    //             R150 - R350<span className="highlights"></span>
-    //           </h2>
-    //         </div>
-
-    //         <div className="services">
-    //           <ul className="vertical-list">
-    //             <li>
-    //               <span>
-    //                 <i class="ri-checkbox-blank-circle-fill"></i>
-    //               </span>
-    //               <span className="high__v2">30min :</span>Targeted Muscle - R150
-    //             </li>
-    //             <li>
-    //               <span>
-    //                 <i class="ri-checkbox-blank-circle-fill"></i>
-    //               </span>
-    //               <span className="high__v2">60min :</span>Full Body - R250
-    //             </li>
-    //             <li>
-    //               <span>
-    //                 <i class="ri-checkbox-blank-circle-fill"></i>
-    //               </span>
-    //               <span className="high__v2">90min :</span>Full Bod Deep Tissue
-    //               - R350
-    //             </li>
-    //           </ul>
-
-    //         <a 
-    //           style={{float: "none"}}
-    //           className="flex justify-center items-center mt-10" 
-    //           id='Setmore_button_iframe' 
-    //           href='https://booking.setmore.com/scheduleappointment/55279423-9f3f-4e73-b502-37436930d6ec'
-    //         >
-    //           <img 
-    //             border='none' 
-    //             src='https://storage.googleapis.com/full-assets/setmore/images/1.0/Settings/book-now-blue.svg' 
-    //             alt='Click here to book the appointment using setmore' 
-    //           />
-    //         </a>    
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </section>
     <section className="bg-black">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div className="mx-auto max-w-screen-md text-center mb-10 lg:mb-16">
-              <h2 className="mb-4 text-5xl font-bold text-white">Book with us today!</h2>
+              <h2 
+                className="mb-4 text-5xl font-bold text-white"
+              >
+                Book with us today!
+              </h2>
               {/* <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p> */}
             <Helmet>        
               <script 
@@ -165,7 +24,7 @@ const Pricing = () => {
           </div>
           <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
               {/* <!-- Pricing Card --> */}
-              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border border-[--heading-color] shadow xl:p-8">
+              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border-2 border-[--heading-color] shadow xl:p-8">
                   <h3 className="mb-4 text-2xl font-semibold">Ladies Bootcamp</h3>
                   <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
                   <div className="flex justify-center items-baseline my-8">
@@ -208,12 +67,12 @@ const Pricing = () => {
                   </Link>
               </div>
               {/* <!-- Pricing Card --> */}
-              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border border-[--heading-color] shadow xl:p-8">
+              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border-2 border-[--heading-color] shadow xl:p-8">
                   <h3 className="mb-4 text-2xl font-semibold">Personal Training</h3>
                   <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
                   <div className="flex justify-center items-baseline my-8">
                       <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">R600</span>
-                      <span className="text-gray-500 dark:text-gray-400">/12 sessions, area-based</span>
+                      <span className="text-gray-500 dark:text-gray-400">/12 sessions  area-based</span>
                   </div>
                   {/* <!-- List --> */}
                   <ul className="mb-8 space-y-4 text-left">
@@ -251,7 +110,7 @@ const Pricing = () => {
                   </Link>
               </div>
               {/* <!-- Pricing Card --> */}
-              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border border-[--heading-color] shadow xl:p-8">
+              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border-2 border-[--heading-color] shadow xl:p-8">
                   <h3 className="mb-4 text-2xl font-semibold">Sport Massage</h3>
                   <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">Simply click "Book Now" to book an appointment.</p>
                   <div className="flex justify-center items-baseline my-8">

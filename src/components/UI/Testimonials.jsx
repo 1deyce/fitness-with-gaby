@@ -10,8 +10,8 @@ export default function Testimonials() {
                 Read trusted reviews from our clients
             </h2>
 
-            <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-            <blockquote className="rounded-lg bg-black border border-[--heading-color] p-6 shadow-sm sm:p-8">
+            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-8">
+            <blockquote className="rounded-lg bg-black border-2 border-[--heading-color] p-6 shadow-sm sm:p-8">
                 <div className="flex items-center gap-4">
                 <img
                     alt="Man"
@@ -77,7 +77,7 @@ export default function Testimonials() {
                 </div>
                 </div>
 
-                <p className="mt-4 text-white">
+                <p className="mt-4 text-white tracking-tight">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit
                 rerum incidunt, a consequuntur recusandae ab saepe illo est quia
                 obcaecati neque quibusdam eius accusamus error officiis atque
@@ -151,7 +151,7 @@ export default function Testimonials() {
                 </div>
                 </div>
 
-                <p className="mt-4 text-black">
+                <p className="mt-4 text-black tracking-tight">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit
                 rerum incidunt, a consequuntur recusandae ab saepe illo est quia
                 obcaecati neque quibusdam eius accusamus error officiis atque
@@ -159,7 +159,7 @@ export default function Testimonials() {
                 </p>
             </blockquote>
 
-            <blockquote className="rounded-lg bg-black border border-[--heading-color] p-6 shadow-sm sm:p-8">
+            <blockquote className="rounded-lg bg-black border-2 border-[--heading-color] p-6 shadow-sm sm:p-8">
                 <div className="flex items-center gap-4">
                 <img
                     alt="Man"
@@ -225,7 +225,7 @@ export default function Testimonials() {
                 </div>
                 </div>
 
-                <p className="mt-4 text-white">
+                <p className="mt-4 text-white tracking-tight">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa sit
                 rerum incidunt, a consequuntur recusandae ab saepe illo est quia
                 obcaecati neque quibusdam eius accusamus error officiis atque

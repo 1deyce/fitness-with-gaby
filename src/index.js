@@ -8,14 +8,8 @@ import ReviewsPage from "./pages/ReviewsPage";
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import NoPage from "./pages/NoPage";
+import AboutPage from "./pages/AboutPage";
 import "./App.css";
-import "./styles/hero.css";
-import "./styles/header.css";
-import "./styles/exercises.css";
-import "./styles/footer.css";
-import "./styles/pricing.css";
-import "./styles/start.css";
-// import './assets/main.css';
 
 export default function App() {
   return (
@@ -23,6 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/bookings" element={<BookingsPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/contact" element={<ContactPage />} />

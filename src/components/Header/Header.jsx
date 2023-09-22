@@ -6,6 +6,7 @@ import logo from "../../assets/img/logo1.jpg";
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
+  { name: 'About', href: '/about', current: false },
   { name: 'Bookings', href: '/bookings', current: false },
   { name: 'Reviews', href: '/reviews', current: false },
   { name: 'Contact Us', href: '/contact', current: false },
@@ -22,7 +23,7 @@ export default function Header() {
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-[--heading-color] hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -33,7 +34,7 @@ export default function Header() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+              <div className="flex flex-1 items-center justify-center sm:items-stretch md:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                     <Link to='/'>
                         <img
@@ -43,18 +44,20 @@ export default function Header() {
                           alt="Fitness With Gaby"
                         />
                     </Link>
-                    <h2 className="ml-10 mr-10 hidden lg:block uppercase text-[--heading-color] font-[600] text-[2rem]">
+                    <h2 
+                      className="ml-10 mr-10 hidden xl:block uppercase text-[--heading-color] font-[600] text-[2rem]"
+                    >
                         Fitness with Gaby
                     </h2>
                 </div>
-                <div className="hidden sm:ml-6 sm:block">
+                <div className="hidden sm:ml-6 md:block">
                   <div className="flex space-x-6">
                     {navigation.map((item) => (
                       <NavLink
                         key={item.name}
                         to={item.href}
-                        activeClassName='bg-black text-white'
-                        className='text-white hover:bg-[--heading-color] hover:text-black rounded-xl px-7 py-2 text-md font-[600] text-center ml-10 mt-1'
+                        activeclassname='bg-black text-white'
+                        className='text-white hover:bg-[--heading-color] hover:text-black rounded-xl px-6 py-2 text-md font-normal text-center lg:ml-40 xl:ml-0 mt-1'
                       >
                         {item.name}
                       </NavLink>
@@ -65,7 +68,7 @@ export default function Header() {
             </div>
           </div>
 
-          <Disclosure.Panel className="md:hidden">
+          <Disclosure.Panel className="lg:hidden block">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <NavLink

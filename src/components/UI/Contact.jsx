@@ -81,7 +81,7 @@ const Contact = () => {
                   name="fullName"
                   id="full-name"
                   autoComplete="given-name"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                   name="email"
                   id="email"
                   autoComplete="email"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
                   onChange={handleChange}
                   value={email}
                 />
@@ -121,7 +121,7 @@ const Contact = () => {
                   name="subject"
                   id="subject"
                   autoComplete="subject"
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
                 />
               </div>
             </div>
@@ -138,7 +138,7 @@ const Contact = () => {
                   name="message"
                   id="message"
                   rows={3}
-                  className="block w-full rounded-md border-0 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[--heading-color] sm:text-sm sm:leading-6"
                   defaultValue={''}
                 />
               </div>
@@ -151,8 +151,8 @@ const Contact = () => {
             >
               Let's talk
             </button>
-            {result && <Result />}
           </div>
+          {result && <Result />}
         </form>
       </div>
     </section>
