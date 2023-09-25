@@ -13,9 +13,9 @@ const ReviewsPage = () => {
   usePageTitle('Reviews | FWG');
 
   return (
-    <div>
+    <section className='pt-0 mb-0 bg-black overflow-y-hidden'>
       <Testimonials />
-    </div>
+    </section>
   );
 };
 

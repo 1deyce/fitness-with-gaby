@@ -11,9 +11,9 @@ const ContactPage = () => {
   usePageTitle('Contact Us | FWG');
 
   return (
-    <div>
+    <section className='pt-0 mb-0 bg-black overflow-y-hidden'>
       <Contact />
-    </div>
+    </section>
   );
 };
 
