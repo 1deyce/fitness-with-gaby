@@ -1,4 +1,4 @@
-Live Site: 'Coming soon...'
+Live Site: https://lighthearted-marigold-9a1a80.netlify.app/
 
 # Getting Started with Create React App
 
