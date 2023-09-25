@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { NavLink, Link } from 'react-router-dom'
@@ -57,7 +57,7 @@ export default function Header() {
                         key={item.name}
                         to={item.href}
                         activeclassname='bg-black text-white'
-                        className='text-white hover:bg-[--heading-color] hover:text-black rounded-xl px-6 py-2 text-md font-normal text-center lg:ml-40 xl:ml-0 mt-1'
+                        className='text-white hover:bg-[--heading-color] hover:text-black rounded-xl px-6 py-2 text-md font-light text-center lg:ml-40 xl:ml-0 mt-1'
                       >
                         {item.name}
                       </NavLink>
@@ -76,7 +76,7 @@ export default function Header() {
                   as="a"
                   to={item.href}
                   className={classNames(
-                    item.current ? 'bg-black text-white' : 'text-gray-300 hover:bg-[--heading-color] hover:text-white',
+                    item.current ? 'bg-[--heading-color] text-white' : 'text-gray-300 hover:bg-[--heading-color] hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}

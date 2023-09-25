@@ -8,10 +8,10 @@ const usePageTitle = (title) => {
 };
 
 const AboutPage = () => {
-    usePageTitle('Fitness With Gaby');
+    usePageTitle('About | FWG');
 
     return (
-        <section className='bg-black'>
+        <section className='pt-0 mb-0 bg-black overflow-y-hidden'>
             <About />
         </section>
     )

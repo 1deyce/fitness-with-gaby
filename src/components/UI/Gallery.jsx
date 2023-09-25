@@ -17,7 +17,7 @@ const Gallery = () => {
   return ( 
       <section className='bg-black'>
         <Fade 
-          duration={3000}
+          duration={2000}
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 m-6 md:m-20">
             <div className="grid gap-4">

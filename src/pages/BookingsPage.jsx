@@ -11,9 +11,9 @@ const BookingsPage = () => {
   usePageTitle('Bookings | FWG');
 
   return (
-    <div>
+    <section className='pt-0 mb-0 bg-black overflow-y-hidden'>
       <Pricing />
-    </div>
+    </section>
   );
 };
 
