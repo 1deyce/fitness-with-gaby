@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const Start = () => {
   return (
-    <section id="hero" className="bg-black">
+    <section 
+      id="hero" 
+      className="bg-black"
+    >
       <div className="relative isolate px-6 lg:px-8">
         <div className="mx-auto max-w-3xl sm:py-48 lg:py-56">
           <div className="text-center">

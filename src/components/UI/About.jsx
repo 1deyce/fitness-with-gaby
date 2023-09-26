@@ -17,7 +17,7 @@ const About = () => {
                   About Us
                 </h1>
                 <p
-                  className="text-center text-lg font-normal leading-6 text-[--heading-color]"
+                  className="text-center text-lg font-normal leading-8 text-[--heading-color]"
                 >              
                   Beyond bootcamp and personal training, we offer a range of massage
                   services to ensure our clients are feeling & performing at their
