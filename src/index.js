@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import "remixicon/fonts/remixicon.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom/dist";
 import Aos from "aos";
 import Logo from "./assets/img/logo1.jpg";
 import Layout from "./pages/Layout";
@@ -11,28 +10,27 @@ import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import NoPage from "./pages/NoPage";
 import AboutPage from "./pages/AboutPage";
+import "remixicon/fonts/remixicon.css";
 import "./App.css";
 
-export default function App() {
+function App() {
   const [isloading, setIsLoading] = useState(true);
+  const location = useLocation(); 
 
   useEffect(() => {
     document.title = "Fitness With Gaby"
     Aos.init();
+  }, []);
+
+  useEffect(() => {
+    setIsLoading(true);
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2450); // value of delay length in ms.
+    }, 1500);
 
     return () => clearTimeout(timer);
-  }, []);
-
-  const handlePageChange = () => {
-    setIsLoading(true);
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2450);
-  };
+  }, [location]); // added location here, so this effect runs on route change
 
   return (
     <div className="overflow-hidden">
@@ -45,8 +43,7 @@ export default function App() {
           />
         </div>
       ) : (
-        <BrowserRouter>
-          <Routes onChange={handlePageChange}>
+          <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<HomePage />} />
               <Route path="/about" element={<AboutPage />} />
@@ -56,10 +53,14 @@ export default function App() {
               <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>
-        </BrowserRouter>
       )}
     </div>
   );
 } 
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>, 
+  document.getElementById("root")
+);
