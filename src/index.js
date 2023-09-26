@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom/dist";
+import { createRoot } from "react-dom/client";
 import Aos from "aos";
 import Logo from "./assets/img/logo1.jpg";
 import Layout from "./pages/Layout";
@@ -58,9 +58,9 @@ function App() {
   );
 } 
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root"));
+root.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>, 
-  document.getElementById("root")
+  </BrowserRouter>
 );
