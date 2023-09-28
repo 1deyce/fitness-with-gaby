@@ -27,7 +27,7 @@ function App() {
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 1700);
 
     return () => clearTimeout(timer);
   }, [location]); // added location here, so this effect runs on route change
