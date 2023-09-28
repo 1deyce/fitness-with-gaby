@@ -15,6 +15,7 @@ import "./App.css";
 
 function App() {
   const [isloading, setIsLoading] = useState(true);
+  const [isContentReady, setIsContentReady] = useState(false);
   const location = useLocation(); 
 
   useEffect(() => {
@@ -27,6 +28,7 @@ function App() {
 
     const timer = setTimeout(() => {
       setIsLoading(false);
+      setIsContentReady(true);
     }, 1500);
 
     return () => clearTimeout(timer);
@@ -34,7 +36,7 @@ function App() {
 
   return (
     <div className="overflow-hidden">
-      {isloading ? (
+      {isloading || !isContentReady ? (
         <div className="loader-wrapper flex justify-center items-center h-screen bg-black">
           <img 
             src={Logo} 
