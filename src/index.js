@@ -27,10 +27,10 @@ function App() {
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1700);
+    }, 1500);
 
     return () => clearTimeout(timer);
-  }, [location]); // added location here, so this effect runs on route change
+  }, [location]); // this effect runs on route change
 
   return (
     <div className="overflow-hidden">
