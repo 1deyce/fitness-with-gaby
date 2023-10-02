@@ -1,17 +1,24 @@
 import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
+Aos.init();
 export default function Testimonials() {
     return (
         <section className="bg-black">
-            <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+            <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
                 <h2
                     className="text-center text-4xl font-bold text-white sm:text-5xl mb-20"
                 >
                     Read trusted reviews from our clients
                 </h2>
 
-                <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-8">
-                    <blockquote className="rounded-lg bg-black border-2 border-[--heading-color] p-6 shadow-sm sm:p-8">
+                <div className="mt-8 grid grid-cols-1 gap-8 md:gap-16">
+                    <blockquote
+                        data-aos="fade-up-left"
+                        data-aos-duration="1000" 
+                        className="rounded-lg bg-black border-2 border-[--heading-color] p-6 shadow-sm sm:p-8"
+                    >
                         <div className="flex items-center text-center justify-center gap-4">
                             <div>
                                 <div className="bg-black flex justify-center gap-0.5 text-[--heading-color]">
@@ -78,7 +85,11 @@ export default function Testimonials() {
                         </p>
                     </blockquote>
 
-                    <blockquote className="rounded-lg bg-white p-6 shadow-sm sm:p-8">
+                    <blockquote
+                        data-aos="fade-up-right"
+                        data-aos-duration="1000" 
+                        className="rounded-lg bg-white p-6 shadow-sm sm:p-8"
+                    >
                         <div className="flex items-center text-center justify-center gap-4">
                             <div>
                                 <div className="bg-white flex justify-center gap-0.5 text-[--heading-color]">
@@ -149,7 +160,11 @@ export default function Testimonials() {
                         </p>
                     </blockquote>
 
-                    <blockquote className="rounded-lg bg-black border-2 border-[--heading-color] p-6 shadow-sm sm:p-8">
+                    <blockquote
+                        data-aos="fade-up-left"
+                        data-aos-duration="1000" 
+                        className="rounded-lg bg-black border-2 border-[--heading-color] p-6 shadow-sm sm:p-8"
+                    >
                         <div className="flex items-center text-center justify-center gap-4">
                             <div>
                                 <div className="bg-black flex justify-center gap-0.5 text-[--heading-color]">
@@ -212,7 +227,9 @@ export default function Testimonials() {
                             Personal Training
                         </p>
                         <p className="mt-2 text-white text-center leading-5">
-                            I have been training with Gaby for a year and a half now and I have never been fitter. Gaby's training is tough but fun. She always incorporates games into her workouts which makes you forget that you are training. There is a nice bunch of ladies who have become friends through Fitness with Gaby. Her bubbly personality and motivation really helps you get through it. I highly recommend Gaby if you want to lose weight or even just get fit and healthy. 
+                        I am very happy with Gaby and the work we've been doing. I am not the most body confident and I struggle with exercise, it gave me anxiety. I've joined the gym multiple times and always ended up cancelling the contract. I realise I'm getting older and I'm overweight. I don't want to get sick and not able to live life the way I would like. This is why I decided to try Gaby, a different approach I suppose. It's been amazing! A difficult hard process of changing my entire life style but absolutely worth every drop of sweat, tear and penny. I'm stronger physically and mentally. I feel good about myself. I am eating better. To add what was not really the goal but an added bonus. When I started I was moving into a size 18, I am slowly fitting back in my sized 14 clothes. She works with me, at my pace, motivating me at the same time. I love it, it feels so personal, like I'm the only client she sees.
+
+                        Thank you for your dedication and passion for what you do, it changes everything. Romaine xo 
                         </p>
                     </blockquote>
                 </div>
