@@ -26,7 +26,7 @@ const Pricing = () => {
               {/* <!-- Pricing Card --> */}
               <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border-2 border-[--heading-color] shadow xl:p-8">
                   <h3 className="mb-4 text-2xl font-semibold">Ladies Bootcamp</h3>
-                  <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
+                  <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">For those who thrive off of others' energy.</p>
                   <div className="flex justify-center items-baseline my-8">
                       <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">R450</span>
                       <span className="text-gray-500 dark:text-gray-400">/12 sessions</span>
@@ -59,7 +59,7 @@ const Pricing = () => {
               {/* <!-- Pricing Card --> */}
               <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border-2 border-[--heading-color] shadow xl:p-8">
                   <h3 className="mb-4 text-2xl font-semibold">Personal Training</h3>
-                  <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">Best option for personal use & for your next project.</p>
+                  <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">For the solo riders.<br/><br/></p>
                   <div className="flex justify-center items-baseline my-8">
                       <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">R600</span>
                       <span className="text-gray-500 dark:text-gray-400">/12 sessions  area-based</span>
