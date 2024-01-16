@@ -1,6 +1,6 @@
 Live Site: https://lighthearted-marigold-9a1a80.netlify.app/
 
-# Install Node.js [NEEDED]
+# Install Node.js
 
 Node.js can be installed in different ways. This post highlights the most common and convenient ones. Official packages for all the major platforms are available at https://nodejs.dev/download/.
 
