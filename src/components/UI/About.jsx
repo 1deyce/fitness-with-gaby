@@ -123,7 +123,8 @@ const About = () => {
                   <img 
                     className="rounded-full h-[600px] w-auto ml-6 sm:ml-0 pb-6 flex-shrink-0" 
                     src={geby} 
-                    alt="Gabriella" 
+                    alt="Gabriella"
+                    title="Gabriella"
                   />
                 </div>
             </div>
