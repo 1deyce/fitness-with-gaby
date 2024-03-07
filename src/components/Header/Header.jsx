@@ -21,7 +21,7 @@ export default function Header() {
     <Disclosure as="nav" className="bg-black">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 z-10">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
@@ -35,7 +35,7 @@ export default function Header() {
                 </Disclosure.Button>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch md:justify-start">
-                <div className="flex flex-shrink-0 items-center">
+                <div className="flex flex-shrink-0 items-center pt-10">
                     <Link to='/'>
                         <img
                           className="h-9 w-auto cursor-pointer mt-1 ml-5"
@@ -50,7 +50,7 @@ export default function Header() {
                         Fitness with Gaby
                     </h2>
                 </div>
-                <div className="hidden sm:ml-6 md:block">
+                <div className="hidden sm:ml-6 md:block md:pt-10">
                   <div className="flex space-x-6">
                     {navigation.map((item) => (
                       <NavLink

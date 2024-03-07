@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import backgroundVideo from "../../assets/background-vid.mp4";
+import "../../App.css";
 
 const Start = () => {
   return (
@@ -7,13 +9,18 @@ const Start = () => {
       id="hero" 
       className="bg-black"
     >
-      <div className="relative isolate px-6 lg:px-8">
+      <div className="background-video">
+        <video autoPlay loop muted id="video">
+          <source src={backgroundVideo} type="video/mp4" className="" />
+        </video>
+      </div>
+      <div className="relative isolate px-6 lg:px-8 z-[1]">
         <div className="mx-auto max-w-3xl sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white sm:text-6xl mb-10">
               Let's get stronger!
             </h1>
-            <p className="mt-6 text-lg leading-8 text-[--heading-color] text-center">
+            <p className="mt-6 text-xl font-bold leading-8 text-[--heading-color] text-center">
               <span className="text-white font-[600]">Fitness with Gaby</span>{" "}
               is the go-to destination for anyone looking to achieve their
               fitness goals in Cape Town. At{" "}

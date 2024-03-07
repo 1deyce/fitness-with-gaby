@@ -1,16 +1,15 @@
 import React from "react";
-import geby from "../../assets/img/geby.png";
+// import geby from "../../assets/img/geby.png";
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <section 
-      id="about" 
-      className="bg-black"
+      id="about"
     >
       <div className="2xl:container 2xl:mx-auto lg:py-12 lg:px-20 md:py-12 md:px-6 py-9 px-4">
-        <div className="flex flex-col lg:flex-row justify-between gap-8">
-            <div className="w-full lg:w-12/12 flex flex-col justify-center lg:ml-24">
+        <div className="flex flex-col justify-center gap-8">
+            <div className="w-full flex flex-col justify-center mt-40 mb-14">
                 <h1 
                   className="text-3xl lg:text-5xl font-bold leading-8 text-white text-center pb-12"
                 >
@@ -43,13 +42,87 @@ const About = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex justify-center w-full lg:w-8/12 mt-20 sm:mt-0">
+            <h1 className="text-3xl lg:text-5xl font-bold leading-8 text-white text-center pt-32 pb-12">About Your Trainer</h1>
+            {/* Qualifications */}
+            <h2 className="text-3xl lg:text-5xl font-bold leading-8 text-white text-left pb-12">Qualifications</h2>
+            <ul className="mb-8 space-y-4 text-left">
+              <li className="flex items-center space-x-3">
+                  <svg 
+                    className="flex-shrink-0 w-5 h-5 text-[--heading-color]" 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span className="text-white text-xl">Bachelor of Arts <span className="text-[--heading-color]">(BA)</span> Sport, Recreation and Exercise Science</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                  <svg 
+                    className="flex-shrink-0 w-5 h-5 text-[--heading-color]" 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span className="text-white text-xl">Bachelor of Arts <span className="text-[--heading-color]">(BA Hons)</span> Sport Science</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                  <svg 
+                    className="flex-shrink-0 w-5 h-5 text-[--heading-color]" 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span className="text-white text-xl">Certified Sport Massage Therapist</span>
+              </li>
+            </ul>
+            {/* Experience */}
+            <h2 className="text-3xl lg:text-5xl font-bold leading-8 text-white text-left pb-12">Experience</h2>
+            <ul className="mb-8 space-y-4 text-left">
+              <li className="flex items-center space-x-3">
+                  <svg 
+                    className="flex-shrink-0 w-5 h-5 text-[--heading-color]" 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span className="text-white text-xl">Bootcamp Fitness Instructor - 3 years</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                  <svg 
+                    className="flex-shrink-0 w-5 h-5 text-[--heading-color]" 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span className="text-white text-xl">Personal Trainer - 10 months</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                  <svg 
+                    className="flex-shrink-0 w-5 h-5 text-[--heading-color]" 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span className="text-white text-xl">Sport Massage Therapist - 10 months</span>
+              </li>
+              <li className="flex items-center space-x-3">
+                  <svg 
+                    className="flex-shrink-0 w-5 h-5 text-[--heading-color]" 
+                    fill="currentColor" 
+                    viewBox="0 0 20 20" 
+                    xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span className="text-white text-xl">Strength and Conditioning Intern - 6 months <span className="text-[--heading-color]">(Cape Town City FC)</span></span>
+              </li>
+            </ul>
+        </div>
+        <div>
+            {/* <div className="flex justify-center w-full lg:w-8/12 mt-20 sm:mt-0">
                 <img 
                   className="rounded-full h-[500px] ml-6 sm:ml-0" 
                   src={geby} 
-                  alt="Woman" 
+                  alt="Gabriella" 
                 />
-            </div>
+            </div> */}
         </div>
       </div>
     </section>

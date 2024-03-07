@@ -15,7 +15,7 @@ import img12 from "../../assets/img/11.jpg"
 
 const Gallery = () => {
   return ( 
-      <section className='bg-black'>
+      <section className='bg-black mt-40'>
         <Fade 
           duration={2000}
         >
