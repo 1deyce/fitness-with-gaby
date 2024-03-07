@@ -42,13 +42,13 @@ const About = () => {
               </Link>
             </div>
           </div>
-            <h1 className="text-3xl lg:text-5xl font-bold leading-8 text-white text-center pt-32 pb-12">About Your Trainer</h1>
+            <h1 className="text-3xl lg:text-5xl font-bold leading-8 text-white text-center pt-32 pb-20">About Your Trainer</h1>
             {/* Qualifications */}
             <div className="flex flex-col lg:flex-row">
               <div className="w-full lg:w-1/2">
                 <div>
                   <h2 className="text-3xl lg:text-5xl font-bold leading-8 text-white text-left pb-12">Qualifications</h2>
-                  <ul className="mb-8 space-y-4 text-left">
+                  <ul className="mb-16 space-y-4 text-left">
                     <li className="flex items-center space-x-3">
                         <svg 
                           className="flex-shrink-0 w-5 h-5 text-[--heading-color]" 
@@ -121,7 +121,7 @@ const About = () => {
               </div>
                 <div className="w-full lg:w-1/2 flex justify-end mt-20 sm:mt-0">
                   <img 
-                    className="rounded-full h-[600px] w-auto ml-6 sm:ml-0 mt-2 flex-shrink-0" 
+                    className="rounded-full h-[600px] w-auto ml-6 sm:ml-0 pb-6 flex-shrink-0" 
                     src={geby} 
                     alt="Gabriella" 
                   />
