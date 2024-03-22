@@ -2,7 +2,40 @@ import React from "react";
 import geby from "../../assets/img/gaby-new.jpg";
 import { Link } from "react-router-dom";
 
+const calculateDuration = (startDate) => {
+  const currentDate = new Date();
+  const start = new Date(startDate);
+
+  let years = currentDate.getFullYear() - start.getFullYear();
+  let months = currentDate.getMonth() - start.getMonth();
+
+  if (months < 0) {
+    years -= 1;
+    months += 12;
+  }
+
+  const totalMonths = years * 12 + months;
+
+  return {
+    years,
+    months,
+    totalMonths
+  };
+};
+
+const formatYears = (years) => {
+  return years === 1 ? 'year' : 'years';
+};
+
 const About = () => {
+  const initialStartDate = new Date('2021-01-01');
+  const initialStartDate1 = new Date('2023-07-01');
+  const initialStartDate2 = new Date('2022-08-01')
+
+  const bootcampDuration = calculateDuration(initialStartDate);
+  const trainerDuration = calculateDuration(initialStartDate1);
+  const massageDuration = calculateDuration(initialStartDate2);
+
   return (
     <section 
       id="about"
@@ -87,7 +120,11 @@ const About = () => {
                           viewBox="0 0 20 20" 
                           xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                         </svg>
-                        <span className="text-white text-xl">Bootcamp Fitness Instructor - 3 years</span>
+                        <span className="text-white text-xl">
+                          Bootcamp Fitness Instructor - 
+                          {bootcampDuration.years > 0 ? ` ${bootcampDuration.years} ${formatYears(bootcampDuration.years)}, ` : ''}
+                          {bootcampDuration.years > 0 || bootcampDuration.months > 0 ? ` ${bootcampDuration.months} months` : ` ${bootcampDuration.totalMonths} months`}
+                        </span>
                     </li>
                     <li className="flex items-center space-x-3">
                         <svg 
@@ -96,7 +133,11 @@ const About = () => {
                           viewBox="0 0 20 20" 
                           xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                         </svg>
-                        <span className="text-white text-xl">Personal Trainer - 10 months</span>
+                        <span className="text-white text-xl">
+                          Personal Trainer - 
+                          {trainerDuration.years > 0 ? ` ${trainerDuration.years} ${formatYears(trainerDuration.years)}, ` : ''}
+                          {trainerDuration.years > 0 || trainerDuration.months > 0 ? ` ${trainerDuration.months} months` : `${trainerDuration.totalMonths} months`}
+                        </span>
                     </li>
                     <li className="flex items-center space-x-3">
                         <svg 
@@ -105,7 +146,11 @@ const About = () => {
                           viewBox="0 0 20 20" 
                           xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                         </svg>
-                        <span className="text-white text-xl">Sport Massage Therapist - 10 months</span>
+                        <span className="text-white text-xl">
+                          Sport Massage Therapist - 
+                          {massageDuration.years > 0 ? ` ${massageDuration.years} ${formatYears(massageDuration.years)}, ` : ''}
+                          {massageDuration.years > 0 || massageDuration.months > 0 ? ` ${massageDuration.months} months` : ` ${massageDuration.totalMonths} months`}
+                        </span>
                     </li>
                     <li className="flex items-center space-x-3">
                         <svg 
