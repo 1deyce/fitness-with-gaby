@@ -10,7 +10,7 @@ const Start = () => {
       className="bg-black"
     >
       <div className="background-video">
-        <video autoPlay loop muted id="video">
+        <video playsInline autoPlay loop muted id="video">
           <source src={backgroundVideo} type="video/mp4" className="" />
         </video>
       </div>
