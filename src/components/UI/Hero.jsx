@@ -4,13 +4,42 @@ import backgroundVideo from "../../assets/background-vid.mp4";
 import "../../App.css";
 
 const Start = () => {
+  function handlePlay() {
+    const video = document.getElementById('video');
+    video.play().catch((error) => {
+      // Autoplay was blocked or failed.
+      // You can handle the error here or provide an alternative user interaction to start video playback.
+      console.error('Autoplay failed:', error);
+    });
+  }
+  
+  function handleLoadedData() {
+    const video = document.getElementById('video');
+    if (video.paused) {
+      video.play().catch((error) => {
+        // Autoplay was blocked or failed.
+        // You can handle the error here or provide an alternative user interaction to start video playback.
+        console.error('Autoplay failed:', error);
+      });
+    }
+  }
+
   return (
     <section 
       id="hero" 
       className="bg-black"
     >
       <div className="background-video">
-        <video playsInline autoPlay loop muted id="video">
+        <video 
+          playsInline 
+          autoPlay 
+          loop 
+          muted 
+          id="video"
+          onClick={handlePlay}
+          onLoadedData={handleLoadedData}
+          onPlay={handlePlay}
+        >
           <source src={backgroundVideo} type="video/mp4" className="" />
         </video>
       </div>
