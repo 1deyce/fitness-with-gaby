@@ -56,7 +56,7 @@ const Contact = () => {
       <div className="isolate px-6 py-16 sm:py-16 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 
-            className="text-3xl font-bold text-white sm:text-6xl"
+            className="text-4xl font-bold text-white sm:text-6xl"
           >
             Contact Us
           </h2>

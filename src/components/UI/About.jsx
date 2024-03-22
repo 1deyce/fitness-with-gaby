@@ -9,9 +9,9 @@ const About = () => {
     >
       <div className="2xl:container 2xl:mx-auto lg:py-12 lg:px-20 md:py-12 md:px-6 py-9 px-4">
         <div className="flex flex-col justify-center gap-8">
-          <div className="w-full flex flex-col justify-center mt-40 mb-14">
+          <div className="w-full flex flex-col justify-center md:mt-40 mb-14">
             <h1 
-              className="text-3xl lg:text-5xl font-bold leading-8 text-white text-center pb-12"
+              className="text-4xl lg:text-5xl font-bold leading-8 text-white text-center pb-12"
             >
               About Us
             </h1>

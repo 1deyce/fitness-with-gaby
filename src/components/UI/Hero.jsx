@@ -29,7 +29,7 @@ const Start = () => {
       id="hero" 
       className="bg-black"
     >
-      <div className="background-video">
+      <div className="relative lg:absolute opacity-[0.5] right-0 left-0">
         <video 
           playsInline 
           autoPlay 
@@ -44,7 +44,7 @@ const Start = () => {
         </video>
       </div>
       <div className="relative isolate px-6 lg:px-8 z-[1]">
-        <div className="mx-auto max-w-3xl sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-3xl sm: py-20 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white sm:text-6xl mb-10">
               Let's get stronger!
