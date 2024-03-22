@@ -1,4 +1,4 @@
-Live Site: https://lighthearted-marigold-9a1a80.netlify.app/
+Live Site: https://www.fitnesswithgaby.co.za
 
 # Install Node.js
 
