@@ -28,8 +28,8 @@ const Pricing = () => {
                   <h3 className="mb-4 text-2xl font-semibold">Ladies Bootcamp</h3>
                   <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">For those who thrive off of others' energy.</p>
                   <div className="flex justify-center items-baseline my-8">
-                      <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">R450</span>
-                      <span className="text-gray-500 dark:text-gray-400">/12 sessions</span>
+                      <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">R500</span>
+                      <span className="text-gray-500 dark:text-gray-400">/16 sessions</span>
                   </div>
                   {/* <!-- List --> */}
                   <ul className="mb-8 space-y-4 text-left">
@@ -41,12 +41,12 @@ const Pricing = () => {
                       <li className="flex items-center space-x-3">
                           {/* <!-- Icon --> */}
                           <svg className="flex-shrink-0 w-5 h-5 text-[--heading-color]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                          <span className="text-[--heading-color]">Days : Mon , Wed & Thurs</span>
+                          <span className="text-[--heading-color]">Days : Monday - Thursday</span>
                       </li>
                       <li className="flex items-center space-x-3">
                           {/* <!-- Icon --> */}
                           <svg className="flex-shrink-0 w-5 h-5 text-[--heading-color]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                          <span>Times : 5h45 - 6h45 / 17h45 - 18h45</span>
+                          <span>Times : 17h45 - 18h45</span>
                       </li>
                   </ul>
                   <Link
