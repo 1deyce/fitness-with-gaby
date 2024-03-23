@@ -164,7 +164,7 @@ const About = () => {
                   </ul>
                 </div>
               </div>
-                <div className="w-full lg:w-1/2 flex justify-end mt-20 sm:mt-0">
+                <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-20 lg:mt-0">
                   <img 
                     className="rounded-full h-[600px] w-auto ml-6 sm:ml-0 pb-6 flex-shrink-0" 
                     src={geby} 
