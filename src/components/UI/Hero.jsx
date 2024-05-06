@@ -39,6 +39,7 @@ const Start = () => {
           onClick={handlePlay}
           onLoadedData={handleLoadedData}
           onPlay={handlePlay}
+          preload="auto"
         >
           <source src={backgroundVideo} type="video/mp4" className="" />
         </video>
