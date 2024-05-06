@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Disclosure } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 import logo from "../../assets/img/logo1.jpg";
 
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/', current: false },
   { name: 'About', href: '/about', current: false },
   { name: 'Bookings', href: '/bookings', current: false },
   { name: 'Reviews', href: '/reviews', current: false },
@@ -17,6 +17,23 @@ function classNames(...classes) {
 }
 
 export default function Header() {
+  const [expanded, setExpanded] = React.useState(false);
+  const [navItems, setNavigation] = React.useState(navigation);
+  const location = useLocation();
+
+  useEffect(() => {
+    const updatedNavigation = navigation.map((item) => ({
+      ...item,
+      current: item.href === location.pathname,
+    }));
+
+    setNavigation(updatedNavigation);
+  }, [location.pathname]);
+
+  const toggleExpansion = () => {
+    setExpanded(!expanded);
+  };
+
   return (
     <Disclosure as="nav" className="bg-black">
       {({ open }) => (
@@ -25,7 +42,10 @@ export default function Header() {
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-[--heading-color] hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button 
+                  className="inline-flex items-center justify-center rounded-md p-2 text-[--heading-color] hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  onClick={toggleExpansion}
+                >
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -52,7 +72,7 @@ export default function Header() {
                 </div>
                 <div className="hidden sm:ml-6 md:block md:pt-10">
                   <div className="flex space-x-6">
-                    {navigation.map((item) => (
+                    {navItems.map((item) => (
                       <NavLink
                         key={item.name}
                         to={item.href}
@@ -70,7 +90,7 @@ export default function Header() {
 
           <Disclosure.Panel className="lg:hidden block">
             <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
+              {navItems.map((item) => (
                 <NavLink
                   key={item.name}
                   as="a"
