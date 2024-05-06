@@ -24,6 +24,8 @@ const Start = () => {
     }
   }
 
+
+
   return (
     <section 
       id="hero" 

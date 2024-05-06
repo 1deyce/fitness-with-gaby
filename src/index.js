@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom/dist";
 import { createRoot } from "react-dom/client";
 import Aos from "aos";
@@ -10,10 +10,13 @@ import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
 import NoPage from "./pages/NoPage";
 import AboutPage from "./pages/AboutPage";
+import backgroundVideo from "./assets/background-vid (2).mp4";
 import "remixicon/fonts/remixicon.css";
 import "./App.css";
 
 function App() {
+  const videoRef = useRef(null);
+  const [isVideoReady, setIsVideoReady] = useState(false);
   const [isloading, setIsLoading] = useState(true);
   const location = useLocation(); 
 
@@ -32,9 +35,25 @@ function App() {
     return () => clearTimeout(timer);
   }, [location]); // this effect runs on route change
 
+  useEffect(() => {
+    if (location.pathname === '/') {
+      const video = videoRef.current;
+
+      const handleCanPlay = () => {
+        setIsVideoReady(true);
+      };
+
+      video.addEventListener("canPlay", handleCanPlay);
+
+      return () => {
+        video.removeEventListener("canPlay", handleCanPlay);
+      }
+    }
+  }, [location]);
+
   return (
     <div className="overflow-hidden">
-      {isloading ? (
+      {isloading || (location.pathname === '/' && isVideoReady) ? (
         <div className="loader-wrapper flex justify-center items-center h-screen bg-black">
           <img 
             src={Logo} 
@@ -53,6 +72,18 @@ function App() {
               <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>
+      )}
+      {location.pathname === "/" && (
+        <video
+          playsInline
+          autoPlay
+          loop
+          muted
+          ref={videoRef}
+          style={{ display: "none" }}
+        >
+          <source src={backgroundVideo} type="video/mp4" className="" />
+        </video>
       )}
     </div>
   );
