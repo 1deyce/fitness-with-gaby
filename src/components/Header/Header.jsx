@@ -89,7 +89,7 @@ export default function Header() {
           </div>
 
           <Disclosure.Panel className="lg:hidden block">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-2 pb-3 pt-8">
               {navItems.map((item) => (
                 <NavLink
                   key={item.name}
