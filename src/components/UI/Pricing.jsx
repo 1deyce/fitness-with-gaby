@@ -122,7 +122,7 @@ const Pricing = () => {
                     style={{float: "none"}}
                     className="hover:text-white hover:ease-linear duration-150 btn font-medium rounded-lg text-sm px-5 py-2.5 text-center" 
                     rel="noreferrer"
-                    href='https://fitnesswithgaby.setmore.com/bookappointment'     //'https://booking.setmore.com/scheduleappointment/55279423-9f3f-4e73-b502-37436930d6ec'
+                    href='https://fitnesswithgabyr.setmore.com/bookappointment'     //'https://booking.setmore.com/scheduleappointment/55279423-9f3f-4e73-b502-37436930d6ec'
                   >
                     Book Now
                   </a>
