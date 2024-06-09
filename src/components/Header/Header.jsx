@@ -9,7 +9,8 @@ const navigation = [
   { name: 'About', href: '/about', current: false },
   { name: 'Bookings', href: '/bookings', current: false },
   { name: 'Reviews', href: '/reviews', current: false },
-  { name: 'Contact Us', href: '/contact', current: false },
+  { name: 'Contact', href: '/contact', current: false },
+  { name: 'Shop', href: 'http://www.shopfwg.company.site', current: false }
 ]
 
 function classNames(...classes) {
@@ -38,9 +39,9 @@ export default function Header() {
     <Disclosure as="nav" className="bg-black">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 z-10">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
+          <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 z-10 flex justify-center">
+            <div className="relative flex h-16 items-center justify-center">
+              <div className="relative inset-y-0 left-0 flex md:hidden">
                 {/* Mobile menu button*/}
                 <Disclosure.Button 
                   className="inline-flex items-center justify-center rounded-md p-2 text-[--heading-color] hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white mt-10"
@@ -54,7 +55,7 @@ export default function Header() {
                   )}
                 </Disclosure.Button>
               </div>
-              <div className="flex flex-1 items-center justify-center sm:items-stretch md:justify-start">
+              <div className="flex flex-1 items-center justify-center  sm:items-stretch md:justify-start">
                 <div className="flex flex-shrink-0 items-center pt-10">
                     <Link to='/'>
                         <img
@@ -71,7 +72,7 @@ export default function Header() {
                     </h2>
                 </div>
                 <div className="hidden sm:ml-6 md:block md:pt-10">
-                  <div className="flex space-x-6">
+                  <div className="flex lg:space-x-5">
                     {navItems.map((item) => (
                       <NavLink
                         key={item.name}

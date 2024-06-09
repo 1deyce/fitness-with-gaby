@@ -50,7 +50,7 @@ const Start = () => {
         <div className="mx-auto max-w-3xl sm: py-20 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white sm:text-6xl mb-10">
-              Let's get stronger!
+              Let's Get Stronger!
             </h1>
             <p className="mt-6 text-xl font-bold leading-8 text-[--heading-color] text-center">
               <span className="text-white font-[600]">Fitness with Gaby</span>{" "}
