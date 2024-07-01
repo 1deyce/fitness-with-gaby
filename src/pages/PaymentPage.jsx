@@ -9,7 +9,7 @@ const PaymentPage = () => {
 
     return (
         <section className="bg-black text-white">
-            <div className="flex justify-center py-8 px-4 mx-auto max-w-screen-xl lg:py-6 lg:px-6">
+            <div className="flex justify-center px-4 mx-auto max-w-screen-xl lg:py-6 lg:px-6">
                 <form 
                     name="PayFastPayNowForm" 
                     action="https://payment.payfast.io/eng/process" 
@@ -17,7 +17,7 @@ const PaymentPage = () => {
                     className='p-10 rounded-md'
                 >
                     <h1 className='text-white mb-12 text-5xl font-bold text-center leading-normal'>
-                        Pay Securely with <span className='bg-gradient-to-r from-[--heading-color] to-[#dee965] rounded-lg p-2'>PayFast</span>
+                        Pay Securely with <span className='bg-gradient-to-r from-[--heading-color] to-[#022d2d] rounded-lg p-2'>PayFast</span>
                     </h1>
                     <p 
                         className='text-white mb-12 text-center text-sm'
@@ -39,7 +39,7 @@ const PaymentPage = () => {
                                 required
                                 id="PayFastAmount"
                                 name="amount"
-                                className="rounded-md text-black p-2 font-semibold text-center w-full bg-[--heading-color]"
+                                className="rounded-md text-black p-3 font-semibold text-center w-full bg-[--heading-color]"
                             >
                                 {pricingList.map((item, index) => (
                                     <option 
@@ -59,7 +59,7 @@ const PaymentPage = () => {
                         <tbody>
                         <tr>
                             <td colSpan={2} align="center">
-                            <input type="image" src="https://my.payfast.io/images/buttons/PayNow/Primary-Large-PayNow.png" alt="Pay Now" title="Pay Now with Payfast" className='pt-20' />
+                            <input type="image" src="https://my.payfast.io/images/buttons/PayNow/Dark-Large-PayNow.png" alt="Pay Now" title="Pay Now with Payfast" className='pt-20' />
                             </td>
                         </tr>
                         </tbody>
