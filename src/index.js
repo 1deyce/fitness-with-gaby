@@ -3,13 +3,14 @@ import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom/dist
 import { createRoot } from "react-dom/client";
 import Aos from "aos";
 import Logo from "./assets/img/logo1.jpg";
-import Layout from "./pages/Layout";
 import BookingsPage from "./pages/BookingsPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import ContactPage from "./pages/ContactPage";
+import PaymentPage from "./pages/PaymentPage";
+import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import NoPage from "./pages/NoPage";
-import AboutPage from "./pages/AboutPage";
+import Layout from "./pages/Layout";
 import backgroundVideo from "./assets/background-vid (2).mp4";
 import "remixicon/fonts/remixicon.css";
 import "./App.css";
@@ -69,6 +70,7 @@ function App() {
               <Route path="/bookings" element={<BookingsPage />} />
               <Route path="/reviews" element={<ReviewsPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/payment" element={<PaymentPage />} />
               <Route path="*" element={<NoPage />} />
             </Route>
           </Routes>

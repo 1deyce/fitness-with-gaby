@@ -24,8 +24,8 @@ const Contact = () => {
         'awgSNM6x33L8HH2UI',
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        (response) => {
+          console.log(response.text);
           showResult(true);
         },
         (error) => {
@@ -106,7 +106,7 @@ const Contact = () => {
                   placeholder="Email Address"
                 />
 
-                {error && <h2 style={{color: 'red'}}>{error}</h2>}
+                {error && <h2 className="font-thin" style={{color: 'red'}}>{error}</h2>}
               </div>
             </div>
             <div className="sm:col-span-2">
