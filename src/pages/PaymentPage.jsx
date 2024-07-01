@@ -16,7 +16,7 @@ const PaymentPage = () => {
                     method="post"
                     className='p-10 rounded-md'
                 >
-                    <h1 className='text-white mb-12 text-5xl font-bold text-center'>
+                    <h1 className='text-white mb-12 text-5xl font-bold text-center leading-normal'>
                         Pay Securely with <span className='bg-gradient-to-r from-[--heading-color] to-[#dee965] rounded-lg p-2'>PayFast</span>
                     </h1>
                     <p 
