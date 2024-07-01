@@ -101,7 +101,7 @@ p {
 
 ::selection {
   background-color: var(--heading-color);
-  color: #fff;
+  color: #000;
 }
 
 .background-video {
