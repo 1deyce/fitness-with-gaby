@@ -15,11 +15,11 @@ const Footer = () => {
 
     return ( 
         <footer className="bg-black">
-            <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+            <div className="mx-auto max-w-screen px-2 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
                 <div
-                    className="mt-16 border-t border-[--heading-color] pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24"
+                    className="mt-16 border-t border-[--heading-color] pt-8 sm:flex flex-wrap sm:items-center sm:justify-around lg:mt-24 md:space-x-0"
                 >
-                    <ul className="flex flex-wrap justify-center gap-4 text-xs pb-3 lg:justify-end">
+                    <ul className="flex justify-center gap-4 text-xs pb-3 lg:justify-end">
                         {footerLinks.map((item) => {
                             return <li key={item.href}>
                                 <Link 
@@ -32,7 +32,7 @@ const Footer = () => {
                         })}
                     </ul>
 
-                    <p className='text-gray-400 text-[13px] text-center sm:mr-36 align-middle leading-4 font-thin'>© {year} - Fitness with Gaby. All Rights Reserved.</p>
+                    <p className='text-gray-400 text-[13px] text-center flex justify-center md:mr-36 leading-4 font-thin'>© {year} - Fitness with Gaby. All Rights Reserved.</p>
 
                     <ul className="flex justify-center gap-3 lg:justify-end mb-4">
                         <li>

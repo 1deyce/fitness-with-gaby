@@ -39,7 +39,7 @@ export default function Header() {
     <Disclosure as="nav" className="bg-black">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8 z-10 flex justify-center">
+          <div className="mx-auto max-w-screen px-2 sm:px-6 lg:px-8 z-10 flex justify-center">
             <div className="relative flex h-16 items-center justify-center">
               <div className="relative inset-y-0 left-0 flex md:hidden">
                 {/* Mobile menu button*/}
@@ -89,16 +89,16 @@ export default function Header() {
             </div>
           </div>
 
-          <Disclosure.Panel className="lg:hidden block">
-            <div className="space-y-1 px-2 pb-3 pt-8">
+          <Disclosure.Panel className="lg:hidden flex justify-center">
+            <div className="space-y-1 p-6 pb-3 pt-8">
               {navItems.map((item) => (
                 <NavLink
                   key={item.name}
                   as="a"
                   to={item.href}
                   className={classNames(
-                    item.current ? 'bg-[--heading-color] text-white' : 'text-gray-300 hover:bg-[--heading-color] hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    item.current ? 'bg-[--heading-color] text-black' : 'text-gray-300 hover:bg-[--heading-color] hover:text-white',
+                    'block rounded-md px-3 py-2 text-base font-medium w-full text-center'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
