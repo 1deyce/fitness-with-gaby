@@ -97,8 +97,8 @@ export default function Header() {
                   as="a"
                   to={item.href}
                   className={classNames(
-                    item.current ? 'bg-[--heading-color] text-black' : 'text-gray-300 hover:bg-[--heading-color] hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium w-full text-center'
+                    item.current ? 'btn text-black' : 'text-gray-300 hover:bg-[--heading-color] hover:text-white',
+                    'block rounded-md px-2 py-2 text-base font-medium w-full text-center'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
