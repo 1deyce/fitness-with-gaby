@@ -3,8 +3,8 @@ import React from 'react';
 const PaymentPage = () => {
     const pricingList = [
         {description: "30min : Targeted Muscle", cost: 150},
-        {description: "60min : Full body", cost: 250},
-        {description: "90min : Full body Deep Tissue", cost: 350}
+        {description: "60min : Full Body", cost: 250},
+        {description: "90min : Full Body Deep Tissue", cost: 350}
     ];
 
     return (
