@@ -10,7 +10,7 @@ const navigation = [
   { name: 'Bookings', href: '/bookings', current: false },
   { name: 'Reviews', href: '/reviews', current: false },
   { name: 'Contact', href: '/contact', current: false },
-  { name: 'Shop', href: 'http://www.shopfwg.company.site', current: false }
+  { name: 'Shop', href: '/shop', current: false }
 ]
 
 function classNames(...classes) {

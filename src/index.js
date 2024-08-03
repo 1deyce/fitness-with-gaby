@@ -11,6 +11,7 @@ import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
 import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
+import ShopPage from "./pages/ShopPage";
 import backgroundVideo from "./assets/background-vid (2).mp4";
 import "remixicon/fonts/remixicon.css";
 import "./App.css";
@@ -73,6 +74,7 @@ function App() {
               <Route path="/payment" element={<PaymentPage />} />
               <Route path="*" element={<NoPage />} />
             </Route>
+            <Route path="/shop" element={<ShopPage />} />
           </Routes>
       )}
       {location.pathname === "/" && (
