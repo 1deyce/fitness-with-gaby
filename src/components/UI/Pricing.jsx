@@ -57,27 +57,23 @@ const Pricing = () => {
                   </Link>
               </div>
               {/* <!-- Pricing Card --> */}
-              <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border-2 border-[--heading-color] shadow xl:p-8">
+              {/* <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border-2 border-[--heading-color] shadow xl:p-8">
                   <h3 className="mb-4 text-2xl font-semibold">Personal Training</h3>
                   <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">For the solo riders.<br/><br/></p>
                   <div className="flex justify-center items-baseline my-8">
                       <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">R600</span>
                       <span className="text-gray-500 dark:text-gray-400">/12 sessions  area-based</span>
                   </div>
-                  {/* <!-- List --> */}
                   <ul className="mb-8 space-y-4 text-left">
                       <li className="flex items-center space-x-3">
-                          {/* <!-- Icon --> */}
                           <svg className="flex-shrink-0 w-5 h-5 text-[--heading-color]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                           <span>Venue : Client's home</span>
                       </li>
                       <li className="flex items-center space-x-3">
-                          {/* <!-- Icon --> */}
                           <svg className="flex-shrink-0 w-5 h-5 text-[--heading-color]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                           <span className="text-[--heading-color]">Days : Availability Dependent</span>
                       </li>
                       <li className="flex items-center space-x-3">
-                          {/* <!-- Icon --> */}
                           <svg className="flex-shrink-0 w-5 h-5 text-[--heading-color]" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                           <span>Times : Availability Dependent</span>
                       </li>
@@ -88,7 +84,7 @@ const Pricing = () => {
                   >
                     Get started
                   </Link>
-              </div>
+              </div> */}
               {/* <!-- Pricing Card --> */}
               <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border-2 border-[--heading-color] shadow xl:p-8">
                   <h3 className="mb-4 text-2xl font-semibold">Sport Massage</h3>
