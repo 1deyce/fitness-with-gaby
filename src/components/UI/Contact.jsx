@@ -124,7 +124,7 @@ const Contact = () => {
                   id="subject"
                   autoComplete="subject"
                   className="text-semibold text-white bg-[#151515] block w-full rounded-md border-0 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-[#151515] placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
-                  placeholder="eg. Personal Training, Bootcamp, ..."
+                  placeholder="eg. Bootcamp..."
                 />
               </div>
             </div>

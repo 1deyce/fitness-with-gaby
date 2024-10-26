@@ -51,7 +51,7 @@ const About = () => {
             <p
               className="text-center text-lg font-normal leading-8 text-[--heading-color]"
             >              
-              Beyond bootcamp and personal training, we offer a range of massage
+              Beyond bootcamp, we offer a range of massage
               services to ensure our clients are feeling & performing at their
               best. Our <span className="text-white font-[600]">Full Body</span> Sport Massage &
               <span className="text-white font-[600]"> Targeted Muscle Group</span> Sport
