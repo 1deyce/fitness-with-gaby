@@ -10,7 +10,7 @@ const navigation = [
   { name: "Bookings", href: "/bookings", current: false },
   { name: "Reviews", href: "/reviews", current: false },
   { name: "Contact", href: "/contact", current: false },
-  { name: "Shop", href: "https://shop-fwg.netlify.app/", current: false },
+  { name: "Shop", href: "https://shop.fitnesswithgaby.co.za", current: false },
 ];
 
 function classNames(...classes) {
