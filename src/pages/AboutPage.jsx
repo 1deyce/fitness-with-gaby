@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
-import About from '../components/UI/About';
+import React, { useEffect } from "react";
+import About from "../components/UI/About";
 
 const usePageTitle = (title) => {
     useEffect(() => {
-      document.title = title;
-    }, [title])
+        document.title = title;
+    }, [title]);
 };
 
 const AboutPage = () => {
-    usePageTitle('About | FWG');
+    usePageTitle("About | FWG");
 
     return (
-        <section className='pt-0 mb-0 bg-black overflow-y-hidden'>
+        <section className="pt-0 mb-0 bg-black overflow-y-hidden">
             <About />
         </section>
-    )
-}
+    );
+};
 
 export default AboutPage;

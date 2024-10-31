@@ -157,7 +157,7 @@ const Pricing = () => {
                                         clip-rule="evenodd"
                                     ></path>
                                 </svg>
-                                <span>30min : Targeted Muscle - R200</span>
+                                <span>30min : Targeted Muscle Group - R200</span>
                             </li>
                             <li className="flex items-center space-x-3">
                                 {/* <!-- Icon --> */}
