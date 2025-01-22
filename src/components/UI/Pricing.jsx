@@ -34,7 +34,7 @@ const Pricing = () => {
                                 R500
                             </span>
                             <span className="text-gray-500 dark:text-gray-400">
-                                /16 sessions
+                                /12 sessions
                             </span>
                         </div>
                         {/* <!-- List --> */}
@@ -72,7 +72,7 @@ const Pricing = () => {
                                     ></path>
                                 </svg>
                                 <span className="text-[--heading-color]">
-                                    Days : Monday - Thursday
+                                    Days : Tuesday - Thursday
                                 </span>
                             </li>
                             <li className="flex items-center space-x-3">
@@ -174,7 +174,7 @@ const Pricing = () => {
                                     ></path>
                                 </svg>
                                 <span className="text-[--heading-color]">
-                                    60min : Full Body - R300
+                                    60min : Full Body Flush Out - R300
                                 </span>
                             </li>
                             <li className="flex items-center space-x-3">

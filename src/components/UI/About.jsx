@@ -241,6 +241,39 @@ const About = () => {
                                             ></path>
                                         </svg>
                                         <span className="text-white text-xl">
+                                            Electro Muscle Stimulation Trainer -{" "}
+                                            {emsDuration.years > 0
+                                                ? ` ${
+                                                      emsDuration.years
+                                                  } ${formatYears(
+                                                      emsDuration.years
+                                                  )}, `
+                                                : ""}
+                                            {emsDuration.years > 0 ||
+                                            emsDuration.months > 0
+                                                ? `${emsDuration.months} months`
+                                                : emsDuration.days > 0
+                                                ? `${emsDuration.days} days`
+                                                : "less than a day"}{" "}
+                                            <span className="text-[--heading-color]">
+                                                (Body20)
+                                            </span>
+                                        </span>
+                                    </li>
+                                    <li className="flex items-center space-x-3">
+                                        <svg
+                                            className="flex-shrink-0 w-5 h-5 text-[--heading-color]"
+                                            fill="currentColor"
+                                            viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span className="text-white text-xl">
                                             Sport Massage Therapist -
                                             {massageDuration.years > 0
                                                 ? ` ${
@@ -273,41 +306,6 @@ const About = () => {
                                             months{" "}
                                             <span className="text-[--heading-color]">
                                                 (Cape Town City F.C)
-                                            </span>
-                                        </span>
-                                    </li>
-                                    <li className="flex items-center space-x-3">
-                                        <svg
-                                            className="flex-shrink-0 w-5 h-5 text-[--heading-color]"
-                                            fill="currentColor"
-                                            viewBox="0 0 20 20"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                clip-rule="evenodd"
-                                            ></path>
-                                        </svg>
-                                        <span className="text-white text-xl">
-                                            Electro Muscle Stimulation Trainer - {" "}
-                                            {emsDuration.years > 0
-                                                ? ` ${
-                                                      emsDuration.years
-                                                  } ${formatYears(
-                                                      emsDuration.years
-                                                  )}, `
-                                                : ""}
-                                            {
-                                                emsDuration.years > 0 ||
-                                                emsDuration.months > 0
-                                                    ? `${emsDuration.months} months`
-                                                    : emsDuration.days > 0
-                                                    ? `${emsDuration.days} days`
-                                                    : "less than a day"
-                                            }{" "}
-                                            <span className="text-[--heading-color]">
-                                                (Body20)
                                             </span>
                                         </span>
                                     </li>
