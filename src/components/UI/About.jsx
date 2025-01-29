@@ -143,7 +143,7 @@ const About = () => {
                                         <span className="text-white text-xl">
                                             Bachelor of Arts{" "}
                                             <span className="text-[--heading-color]">
-                                                (BA Hons)
+                                                (BA Honours)
                                             </span>{" "}
                                             Sport and Exercise Science
                                         </span>

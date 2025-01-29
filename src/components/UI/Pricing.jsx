@@ -89,7 +89,7 @@ const Pricing = () => {
                                         clip-rule="evenodd"
                                     ></path>
                                 </svg>
-                                <span>Times : 17h45 - 18h45</span>
+                                <span>Time : 17h45 - 18h45</span>
                             </li>
                         </ul>
                         <Link
