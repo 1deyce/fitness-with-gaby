@@ -48,12 +48,10 @@ const About = () => {
     const initialStartDate = new Date("2021-01-01");
     const initialStartDate1 = new Date("2023-07-01");
     const initialStartDate2 = new Date("2022-08-01");
-    const initialStartDate3 = new Date("2024-10-21");
 
     const bootcampDuration = calculateDuration(initialStartDate);
     const trainerDuration = calculateDuration(initialStartDate1);
     const massageDuration = calculateDuration(initialStartDate2);
-    const emsDuration = calculateDuration(initialStartDate3);
 
     return (
         <section id="about">
@@ -165,6 +163,24 @@ const About = () => {
                                             Certified Sport Massage Therapist
                                         </span>
                                     </li>
+                                    <li className="flex items-center space-x-3">
+                                        <svg
+                                            className="flex-shrink-0 w-5 h-5 text-[--heading-color]"
+                                            fill="currentColor"
+                                            viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                clip-rule="evenodd"
+                                            ></path>
+                                        </svg>
+                                        <span className="text-white text-xl">
+                                            Certified Electro Muscle Stimulation
+                                            Trainer
+                                        </span>
+                                    </li>
                                 </ul>
                                 {/* Experience */}
                                 <h2 className="text-3xl lg:text-5xl font-bold leading-8 text-white text-left pb-12">
@@ -213,7 +229,7 @@ const About = () => {
                                             ></path>
                                         </svg>
                                         <span className="text-white text-xl">
-                                            Personal Trainer -
+                                            Personal Trainer -{" "}
                                             {trainerDuration.years > 0
                                                 ? ` ${
                                                       trainerDuration.years
@@ -225,6 +241,10 @@ const About = () => {
                                             trainerDuration.months > 0
                                                 ? ` ${trainerDuration.months} months`
                                                 : `${trainerDuration.totalMonths} months`}
+                                            {/* <span className="text-[--heading-color]">
+                                                {" "}
+                                                (One & Only Resort, Cape Town)
+                                            </span> */}
                                         </span>
                                     </li>
                                     <li className="flex items-center space-x-3">
@@ -241,23 +261,8 @@ const About = () => {
                                             ></path>
                                         </svg>
                                         <span className="text-white text-xl">
-                                            Electro Muscle Stimulation Trainer -{" "}
-                                            {emsDuration.years > 0
-                                                ? ` ${
-                                                      emsDuration.years
-                                                  } ${formatYears(
-                                                      emsDuration.years
-                                                  )}, `
-                                                : ""}
-                                            {emsDuration.years > 0 ||
-                                            emsDuration.months > 0
-                                                ? `${emsDuration.months} months`
-                                                : emsDuration.days > 0
-                                                ? `${emsDuration.days} days`
-                                                : "less than a day"}{" "}
-                                            <span className="text-[--heading-color]">
-                                                (Body20)
-                                            </span>
+                                            Electro Muscle Stimulation Trainer -
+                                            4 Months{" "}
                                         </span>
                                     </li>
                                     <li className="flex items-center space-x-3">

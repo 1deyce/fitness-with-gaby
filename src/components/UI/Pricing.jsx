@@ -27,7 +27,7 @@ const Pricing = () => {
                             Ladies Bootcamp
                         </h3>
                         <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">
-                        Simply click "Get Started" to join.
+                            Simply click "Book Now" to book an appointment.
                         </p>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">
@@ -58,7 +58,6 @@ const Pricing = () => {
                                 </span>
                             </li>
                             <li className="flex items-center space-x-3">
-                                {/* <!-- Icon --> */}
                                 <svg
                                     className="flex-shrink-0 w-5 h-5 text-[--heading-color]"
                                     fill="currentColor"
@@ -72,11 +71,10 @@ const Pricing = () => {
                                     ></path>
                                 </svg>
                                 <span className="text-[--heading-color]">
-                                    Days : Tuesday - Thursday
+                                Time : 17h45 - 18h45
                                 </span>
                             </li>
-                            <li className="flex items-center space-x-3">
-                                {/* <!-- Icon --> */}
+                            {/* <li className="flex items-center space-x-3">
                                 <svg
                                     className="flex-shrink-0 w-5 h-5 text-[--heading-color]"
                                     fill="currentColor"
@@ -90,14 +88,16 @@ const Pricing = () => {
                                     ></path>
                                 </svg>
                                 <span>Time : 17h45 - 18h45</span>
-                            </li>
+                            </li> */}
                         </ul>
-                        <Link
-                            to="/contact"
+                        <a
+                            style={{ float: "none" }}
                             className="hover:text-white hover:ease-linear duration-150 btn font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                            rel="noreferrer"
+                            href="https://fitnesswithgabyr.setmore.com/bookappointment" //'https://booking.setmore.com/scheduleappointment/55279423-9f3f-4e73-b502-37436930d6ec'
                         >
-                            Get Started
-                        </Link>
+                            Book Now
+                        </a>
                     </div>
                     {/* <!-- Pricing Card --> */}
                     {/* <div className="flex flex-col p-6 mx-auto max-w-lg text-center text-white bg-black rounded-lg border-2 border-[--heading-color] shadow xl:p-8">
@@ -134,7 +134,7 @@ const Pricing = () => {
                             Sport Massage
                         </h3>
                         <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">
-                            Simply click "Book Now" to book an appointment.
+                            Simply click "Get Started" to join.
                         </p>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">
@@ -157,7 +157,9 @@ const Pricing = () => {
                                         clip-rule="evenodd"
                                     ></path>
                                 </svg>
-                                <span>30min : Targeted Muscle Group - R200</span>
+                                <span>
+                                    30min : Targeted Muscle Group - R200
+                                </span>
                             </li>
                             <li className="flex items-center space-x-3">
                                 {/* <!-- Icon --> */}
@@ -196,14 +198,12 @@ const Pricing = () => {
                                 </span>
                             </li>
                         </ul>
-                        <a
-                            style={{ float: "none" }}
+                        <Link
+                            to="/contact"
                             className="hover:text-white hover:ease-linear duration-150 btn font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-                            rel="noreferrer"
-                            href="https://fitnesswithgabyr.setmore.com/bookappointment" //'https://booking.setmore.com/scheduleappointment/55279423-9f3f-4e73-b502-37436930d6ec'
                         >
-                            Book Now
-                        </a>
+                            Get Started
+                        </Link>
                     </div>
                 </div>
             </div>
