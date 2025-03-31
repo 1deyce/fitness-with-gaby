@@ -262,7 +262,10 @@ const About = () => {
                                         </svg>
                                         <span className="text-white text-xl">
                                             Electro Muscle Stimulation Trainer -
-                                            4 Months{" "}
+                                            4 Months {""}
+                                            <span className="text-[--heading-color]">
+                                                (Body 20)
+                                            </span>
                                         </span>
                                     </li>
                                     <li className="flex items-center space-x-3">

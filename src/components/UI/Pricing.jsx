@@ -27,14 +27,14 @@ const Pricing = () => {
                             Ladies Bootcamp
                         </h3>
                         <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">
-                            Simply click "Book Now" to book an appointment.
+                            Simply click "Book Now" to book a session.
                         </p>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">
-                                R500
+                                R50
                             </span>
                             <span className="text-gray-500 dark:text-gray-400">
-                                /12 sessions
+                                /session
                             </span>
                         </div>
                         {/* <!-- List --> */}
@@ -71,7 +71,7 @@ const Pricing = () => {
                                     ></path>
                                 </svg>
                                 <span className="text-[--heading-color]">
-                                Time : 17h45 - 18h45
+                                    Time : 17h45 - 18h45
                                 </span>
                             </li>
                             {/* <li className="flex items-center space-x-3">
@@ -134,7 +134,7 @@ const Pricing = () => {
                             Sport Massage
                         </h3>
                         <p className="font-light text-center text-gray-500 sm:text-lg dark:text-gray-400">
-                            Simply click "Get Started" to join.
+                            Simply click "Book Now" to book an appointment.
                         </p>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">
@@ -202,7 +202,7 @@ const Pricing = () => {
                             to="/contact"
                             className="hover:text-white hover:ease-linear duration-150 btn font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                         >
-                            Get Started
+                            Book Now
                         </Link>
                     </div>
                 </div>
