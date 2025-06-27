@@ -71,13 +71,13 @@ function App() {
             ) : (
                 <Routes>
                     <Route path="/" element={<Layout />}>
-                        <Route index element={<HomePage />} />
-                        <Route path="/about" element={<AboutPage />} />
+                        <Route index element={<NoPage />} />
+                        {/* <Route path="/about" element={<AboutPage />} />
                         <Route path="/bookings" element={<BookingsPage />} />
                         <Route path="/reviews" element={<ReviewsPage />} />
                         <Route path="/contact" element={<ContactPage />} />
                         <Route path="/payment" element={<PaymentPage />} />
-                        <Route path="*" element={<NoPage />} />
+                        <Route path="*" element={<NoPage />} /> */}
                     </Route>
                     {/* <Route path="/shop" element={<ShopPage />} /> */}
                 </Routes>
