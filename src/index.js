@@ -8,12 +8,12 @@ import {
 import { createRoot } from "react-dom/client";
 import Aos from "aos";
 import Logo from "./assets/img/logo1.jpg";
-import BookingsPage from "./pages/BookingsPage";
-import ReviewsPage from "./pages/ReviewsPage";
-import ContactPage from "./pages/ContactPage";
-import PaymentPage from "./pages/PaymentPage";
-import AboutPage from "./pages/AboutPage";
-import HomePage from "./pages/HomePage";
+// import BookingsPage from "./pages/BookingsPage";
+// import ReviewsPage from "./pages/ReviewsPage";
+// import ContactPage from "./pages/ContactPage";
+// import PaymentPage from "./pages/PaymentPage";
+// import AboutPage from "./pages/AboutPage";
+// import HomePage from "./pages/HomePage";
 import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 // import ShopPage from "./pages/ShopPage";
