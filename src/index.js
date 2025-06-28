@@ -14,7 +14,7 @@ import ContactPage from "./pages/ContactPage";
 import PaymentPage from "./pages/PaymentPage";
 import AboutPage from "./pages/AboutPage";
 import HomePage from "./pages/HomePage";
-// import NoPage from "./pages/NoPage";
+import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
 // import ShopPage from "./pages/ShopPage";
 import backgroundVideo from "./assets/background-vid (2).mp4";
