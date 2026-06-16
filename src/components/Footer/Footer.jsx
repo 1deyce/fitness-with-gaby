@@ -35,6 +35,7 @@ const Footer = () => {
                     <p className='text-gray-400 text-[13px] text-center flex justify-center md:mr-36 leading-4 font-thin'>© {year} - Fitness with Gaby. All Rights Reserved.</p>
 
                     <ul className="flex justify-center gap-3 lg:justify-end mb-4">
+                        {/* Instagram account no longer in use — kept for potential future re-use.
                         <li>
                             <a
                                 href="https://www.instagram.com/fitnesswithgaby_/"
@@ -59,6 +60,7 @@ const Footer = () => {
                                 </svg>
                             </a>
                         </li>
+                        */}
                         <li>
                             <a
                                 href="https://www.linkedin.com/in/gabriella-antonia-robertson"

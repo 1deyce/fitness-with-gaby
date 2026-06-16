@@ -31,7 +31,7 @@ const Pricing = () => {
                         </p>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">
-                                R50
+                                R80
                             </span>
                             <span className="text-gray-500 dark:text-gray-400">
                                 /session
@@ -138,7 +138,7 @@ const Pricing = () => {
                         </p>
                         <div className="flex justify-center items-baseline my-8">
                             <span className="mr-2 text-5xl font-extrabold text-[--heading-color]">
-                                R200-R400
+                                R250-R450
                             </span>
                         </div>
                         {/* <!-- List --> */}
@@ -158,7 +158,7 @@ const Pricing = () => {
                                     ></path>
                                 </svg>
                                 <span>
-                                    30min : Targeted Muscle Group - R200
+                                    30min : Targeted Muscle Group - R250
                                 </span>
                             </li>
                             <li className="flex items-center space-x-3">
@@ -176,7 +176,7 @@ const Pricing = () => {
                                     ></path>
                                 </svg>
                                 <span className="text-[--heading-color]">
-                                    60min : Full Body Flush Out - R300
+                                    60min : Full Body Flush Out - R350
                                 </span>
                             </li>
                             <li className="flex items-center space-x-3">
@@ -194,7 +194,7 @@ const Pricing = () => {
                                     ></path>
                                 </svg>
                                 <span>
-                                    90min : Full Body Deep Tissue - R400
+                                    90min : Full Body Deep Tissue - R450
                                 </span>
                             </li>
                         </ul>
