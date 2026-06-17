@@ -58,8 +58,8 @@ const About = () => {
 
     return (
         <section id="about" className="bg-black">
-            <div className="relative overflow-hidden w-full min-h-[720px] lg:min-h-[92vh] flex flex-col justify-center">
-                <div className="absolute inset-0 opacity-[0.5] z-0">
+            <div className="relative overflow-hidden w-full lg:min-h-[92vh] flex flex-col justify-center">
+                <div className="relative lg:absolute lg:inset-0 opacity-[0.5] z-0">
                             <video
                                 playsInline
                                 autoPlay
