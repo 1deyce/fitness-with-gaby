@@ -5,10 +5,16 @@ const Footer = () => {
     const year = new Date().getFullYear();
 
     const footerLinks = [
-        { href: '/about', label: 'About' },
-        { href: '/bookings', label: 'Bookings' },
-        { href: '/reviews', label: 'Reviews' },
-        { href: '/contact', label: 'Contact' },
+        { label: "Home", href: "/", current: false },
+        { label: "About", href: "/about", current: false },
+        { label: "Bookings", href: "/bookings", current: false },
+        { label: "Reviews", href: "/reviews", current: false },
+        { label: "Contact", href: "/contact", current: false },
+        {
+            label: "Shop",
+            href: "https://shop.fitnesswithgaby.co.za",
+            current: false,
+        },
     ];
 
     const footerLinkStyles = "text-gray-500 transition hover:text-[--heading-color]";
@@ -17,9 +23,9 @@ const Footer = () => {
         <footer className="bg-black">
             <div className="mx-auto max-w-screen px-2 pb-8 pt-16 sm:px-6 lg:px-8 lg:pt-24">
                 <div
-                    className="mt-16 border-t border-[--heading-color] pt-8 sm:flex flex-wrap sm:items-center sm:justify-around lg:mt-24 md:space-x-0"
+                    className="mt-16 border-t border-[--heading-color] pt-8 grid grid-cols-1 gap-2 sm:grid-cols-3 sm:items-center lg:mt-24"
                 >
-                    <ul className="flex justify-center gap-4 text-xs pb-3 lg:justify-end">
+                    <ul className="flex justify-center gap-4 text-xs pb-3">
                         {footerLinks.map((item) => {
                             return <li key={item.href}>
                                 <Link 
@@ -32,10 +38,9 @@ const Footer = () => {
                         })}
                     </ul>
 
-                    <p className='text-gray-400 text-[13px] text-center flex justify-center md:mr-36 leading-4 font-thin'>© {year} - Fitness with Gaby. All Rights Reserved.</p>
+                    <p className='text-gray-400 text-[13px] text-center flex justify-center leading-4 font-thin'>© {year} - Fitness with Gaby. All Rights Reserved.</p>
 
-                    <ul className="flex justify-center gap-3 lg:justify-end mb-4">
-                        {/* Instagram account no longer in use — kept for potential future re-use.
+                    <ul className="flex justify-center gap-3 mb-4">
                         <li>
                             <a
                                 href="https://www.instagram.com/fitnesswithgaby_/"
@@ -60,7 +65,7 @@ const Footer = () => {
                                 </svg>
                             </a>
                         </li>
-                        */}
+                       
                         <li>
                             <a
                                 href="https://www.linkedin.com/in/gabriella-antonia-robertson"
